@@ -1,0 +1,1690 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<meta charset="UTF-8">
+    <title>Stephen's Notes: Stage 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+<body>
+  <h1>STEPHEN'S COURSE NOTES</h1>
+
+  <div class="TOC">
+    <h1>Table of Contents</h1>
+      <ol>
+        <li class="TOClessons"><a href="#lesson1">The Basics of the Web and HTML</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson1.1">World Wide Web</a></li>
+            <li class="TOClist"><a href="#lesson1.2">HTML</a></li>
+            <li class="TOClist"><a href="#lesson1.3">Tags and Elements</a></li>
+            <li class="TOClist"><a href="#lesson1.4">Whitespace</a></li>
+            <li class="TOClist"><a href="#lesson1.5">Inline vs. Block Elements</a></li>
+          </ul>
+        </li>
+        <li class="TOClessons"><a href="#lesson2">Creating a Structured Document with HTML</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson2.1">Exploring the Web</a></li>
+            <li class="TOClist"><a href="#lesson2.2">Browser Development Tools</a></li>
+            <li class="TOClist"><a href="#lesson2.3">Tree-Like Structure</a></li>
+            <li class="TOClist"><a href="#lesson2.4">How it Works Together</a></li>
+            <li class="TOClist"><a href="#lesson2.5">Boxes Everywhere</a></li>
+            <li class="TOClist"><a href="#lesson2.6">Text Editors</a></li>
+          </ul>
+        </li>
+        <li class="TOClessons"><a href="#lesson3">Adding CSS Style to HTML Structure</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson3.1">Avoiding Repetition</a></li>
+            <li class="TOClist"><a href="#lesson3.2">Understanding CSS</a></li>
+            <li class="TOClist"><a href="#lesson3.3">The Box Model</a></li>
+            <li class="TOClist"><a href="#lesson3.4">Images</a></li>
+            <li class="TOClist"><a href="#lesson3.5">Code - Test - Define</a></li>
+            <li class="TOClist"><a href="#lesson3.6">Verifying HTML and CSS</a></li>
+          </ul>
+        </li>
+		<li class="TOClessons"><a href="#lesson4">Intro to Serious Programming</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson4.1">Computer</a></li>
+            <li class="TOClist"><a href="#lesson4.2">Computer Program</a></li>
+            <li class="TOClist"><a href="#lesson4.3">Programming Language</a></li>
+            <li class="TOClist"><a href="#lesson4.4">Grammar</a></li>
+            <li class="TOClist"><a href="#lesson4.5">Python Expressions</a></li>
+          </ul>
+		</li>
+		<li class="TOClessons"><a href="#lesson5">Python Variables and Strings</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson5.1">Assignment Statement</a></li>
+            <li class="TOClist"><a href="#lesson5.2">String</a></li>
+            <li class="TOClist"><a href="#lesson5.3">Indexing Strings</a></li>
+            <li class="TOClist"><a href="#lesson5.4">Subsequences</a></li>
+            <li class="TOClist"><a href="#lesson5.5">Find</a></li>
+            <li class="TOClist"><a href="#lesson5.6">Finding with Numbers</a></li>
+          </ul>
+        </li>
+        <li class="TOClessons"><a href="#lesson6">Input - Function - Output</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson6.1">Using Procedures</a></li>
+          </ul>
+        </li>
+		<li class="TOClessons"><a href="#lesson7">Control Flow and Loops: If and While</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson7.1">Making Decisions</a></li>
+          </ul>
+        </li>
+		<li class="TOClessons"><a href="#lesson8">Debugging</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson8.1">Debugging Strategies</a></li>
+          </ul>
+        </li>
+		<li class="TOClessons"><a href="#lesson9">Structured Data_Lists and For Loops</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson9.1">What is a List?</a></li>
+            <li class="TOClist"><a href="#lesson9.2">Nested Lists</a></li>
+            <li class="TOClist"><a href="#lesson9.3">Mutation</a></li>
+            <li class="TOClist"><a href="#lesson9.4">Aliasing</a></li>
+            <li class="TOClist"><a href="#lesson9.5">List Operations</a></li>
+            <li class="TOClist"><a href="#lesson9.6">Loops on Lists</a></li>
+          </ul>
+        </li>
+		<li class="TOClessons"><a href="#lesson10">How to Solve Problems</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson10.1">Steps to Solve Problems</a></li>
+          </ul>
+        </li>
+		<li class="TOClessons"><a href="#lesson11">Use Functions</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson11.1">Take a Break</a></li>
+            <li class="TOClist"><a href="#lesson11.2">Secret Message</a></li>
+          </ul>
+        </li>
+		<li class="TOClessons"><a href="#lesson12">Use Classes</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson12.1">Draw Turtles</a></li>
+            <li class="TOClist"><a href="#lesson12.2">Send Texts</a></li>
+            <li class="TOClist"><a href="#lesson12.3">Profanity Editor</a></li>
+          </ul>
+        </li>
+		<li class="TOClessons"><a href="#lesson13">Make Classes</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson13.1">Movie Website</a></li>
+            <li class="TOClist"><a href="#lesson13.2">Advanced Topics</a></li>
+            <li class="TOClist"><a href="#lesson13.3">Inheritance</a></li>
+            <li class="TOClist"><a href="#lesson13.4">Method Overriding</a></li>
+          </ul>
+        </li>
+		<li class="TOClessons"><a href="#lesson14">Concepts</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson14.1">Vocabulary</a></li>
+            <li class="TOClist"><a href="#lesson14.2">Object Oriented Prgramming</a></li>
+          </ul>
+        </li>
+		<li class="TOClessons"><a href="#lesson15">Adding Comments</a>
+          <ul class="TOCul">
+            <li class="TOClist"><a href="#lesson15.1">Servers in More Detail</a></li>
+            <li class="TOClist"><a href="#lesson15.2">Validation of User Input</a></li>
+            <li class="TOClist"><a href="#lesson15.3">HTML Templates and Abstraction</a></li>
+			<li class="TOClist"><a href="#lesson15.4">Submit Comment</a></li>
+          </ul>
+        </li>
+    </ol>
+  </div>
+  
+  <div class="container">
+    <h2 id="lesson1">The Basics of the Web and HTML</h2>
+	<div class="lesson" id="lesson1.1">
+		<div class="title">World Wide Web</div>
+			<div class="content">
+				<p>The world wide web is a collection of html documents. <em>HTML</em> stands for HyperText Markup Language. It includes <em>hyperlinks</em>
+				which are links between pages. It was invented in the 1990's.<br><br>
+				Files that can exist on the web include:</p>
+				<ul>
+					<li>plain text files</li>
+					<li>html</li>
+					<li>images</li>
+					<li>audio</li>
+					<li>video</li>
+				</ul>
+				Major components of the web include: the person, their computer and browser, the internet, and servers.
+				<ul>
+					<li><b>HTTP</b>: the main protocol of the web</li>
+					<li><b>servers</b>: computers that host the files that make up the web</li>
+					<li><b>internet</b>: the world's largest computer network</li>
+					<li><b>browser</b>: a program that runs on your computer to display files found on the web</li>
+				</ul> 
+			</div>
+		</div>
+		
+	<div class="lesson" id="lesson1.2">
+		<div class="title">HTML</div>
+			<div class="content">
+				<p>A web page is a text document written in a language called HTML. Web browsers read these documents, and then interpret and display 
+				them. HTML is made up of:</p>
+				<ul>
+					<li><b>text content</b>: what you see</li>
+					<li><b>markup</b>: what it looks like</li>
+					<li><b>references to other documents</b>: such as images and videos</li>
+					<li><b>links to other pages</b></li>
+				</ul> 
+				<p>Coding happens when programmers write text in a language that a computer can understand. The computer can then follow the instructions the programmer 
+				wrote.
+				The layout for an html document is:<br><br><br>
+				&lt;!DOCTYPE HTML&gt; - HTML5 doctype <br><br>
+				&lt;html&gt; - surrounds entire html document <br><br>
+				&lt;head&gt; - includes meta data, title, javascript, and css<br><br>
+				&lt;title&gt;Title&lt;/title&gt; - appears at tab of browser window<br><br>
+				&lt;/head&gt;<br><br>
+				&lt;body&gt;<br><br>
+				<b><em>Content</em></b> - what appears in body of document; will mostly be covered by this course<br><br>
+				&lt;/body&gt;<br><br>
+				&lt;/html&gt;<br><br>
+				</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson1.3">
+		<div class="title">Tags and Elements</div>
+			<div class="content">
+				<p>To make the text look different use tags. <em>Tags</em> allow you to change the look of the plain text such as italicizing, bolding, or underlining
+				text. This is done by enclosing the text that we want to alter with an opening and closing tag such as: &lt;tag name&gt; content &lt;/tag name&gt;. If 
+				the opening or closing tag isn't entered, the text will not be altered. Programmers need to write exactly the way a computer understands 
+				(also known as writing with correct "syntax"). For example, if you forget to close a &lt;b&gt; tag, the computer won't be able to figure out what you had intended 
+				to make bold. This can be very frustrating. An HTML tag is always contained within angled brackets <b>&lt;&gt;</b>. Most tags have an opening tag &lt;p&gt; and a 
+				closing tag, &lt;/p&gt;. Some tags (called "void" tags) do not require a closing tag (like the &lt;br&gt; tag).
+				An HTML <em>element</em> refers to everything within a set of opening and closing tags.
+				</p>
+				<h4>HTML Attributes</h4>
+				<p> An <em>attribute</em> is a property of an HTML element. For example, to set the href attribute of an anchor tag to the Udacity URL, you would write:<br>
+				&lt;a href="www.udacity.com"&gt;. Tags can have attributes that have a certain name and a value that gives additional information to that particular tag. A tag can have multiple
+				attributes. Including an attribute to a tag is shown as: &lt;tagname attr="value"&gt; content &lt;/tagname&gt;
+				</p>
+				<h4>Links</h4>
+				<p>Links are created using attributes. For example, This website is <a href = "https://www.udacity.com">my favorite</a> is written: This website is 
+				&lt;a href = "https://www.udacity.com"&gt; my favorite &lt;/a&gt; The content within the 'a' tags creates a link to the href listed.</p>
+				<h4>Images</h4>
+				<p>Images are created using the &lt;img&gt; tag and including the src and alt attributes. An example of this is &lt;img src="url" alt="text"&gt; where url is 
+				where the source image is located and alt is a text alternative to the image just in case the image doesn't load on the site. The image tag does not 
+				have any content and therefore no closing tag. This is the result of properly inserting an image:
+				<img src="http://www.udacity.com/cs253x/hipmunk.png" alt="hipmunk!">
+				</p>
+			</div>
+		</div>
+		
+	<div class="lesson" id="lesson1.4">
+		<div class="title">Whitespace</div>
+			<div class="content">
+				<p>HTML doesn't recognize whitespace, or empty space. It enters text in a single line, allowing a space between words, unless specified by the break 
+				tag, &lt;br&gt;, at the end of the line we want to break. The break tag is a void tag and doesn't require a closing tag. Another tag we can use to break a 
+				line is using the paragraph tag, &lt;p&gt;content&lt;/p&gt; which requires a closing tag.<br><br>
+				This is the result<br>of using the break tag. It creates separate lines. 
+				</p>
+				<p>And this is the result of using the paragraph tag which creates a line break before the paragraph but doesn't specify when to break the text causing
+				it to continue to the end of the margin or the end of the paragraph.
+				</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson1.5">
+		<div class="title">Inline vs. Block Elements</div>
+			<div class="content">
+				<ul>
+					<li>br tag is inline; it ends a line. Inline elements are: b, em, and img tags.</li>
+					<li>p tag creates a block; creates an invisible box</li>
+				</ul>
+				<h4>Span vs. Div</h4>
+				<p><em>Span</em> is inline and <em>div</em> is block. Both contain a class attribute to aid in css.<br></p>
+				<span>This is the result of using span</span> One line.
+				<div>This is the result of using div</div> <p>Similar to using the paragraph tag.</p>
+			</div>
+		</div>
+	</div>
+  
+  <div class="container">
+    <h2 id="lesson2">Creating a Structured Document with HTML</h2>
+	<div class="lesson" id="lesson2.1">
+		<div class="title">Exploring the Web</div>
+			<div class="content">
+				<p>Some parts that make up the web are:</p>
+				<ul>
+					<li><b><u>HTML</u></b>: Structure</li>
+					<li><b><u>CSS</u></b>: Style</li>
+					<li><b><u>Javascript</u></b>: Interactive Components</li>
+				</ul>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson2.2">
+		<div class="title">Browser Development Tools</div>
+			<div class="content">
+				<p>Selecting 'tools' within a browser menu and then selecting 'developer tools' will take you to the development tools for that browser.
+					The development tool shows the structure of a page as the browser interprets it; it is not the actual html code. If you hover over the 
+					lines in the development tool, the corresponding part of the page will be highlighted. Clicking the sideways arrow at the left of the
+					line will cause the line to collapse to expand deepr and deeper in the code crating a tree-like structure. The style format for the page 
+					is in a separate panel to the right of the development tool when selecting the line.</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson2.3">
+		<div class="title">Tree-Like Structure</div>
+			<div class="content">
+				<p>The tree-like structure shown by clicking the sideways arrow displays a branching structure. Each sideways triangle is an html element; each
+				has an opening and closing tag. HTML elements can have other elements inside them, thus creating the structure. It shows how html classifies page content
+				and is drawn like a family tree.</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson2.4">
+		<div class="title">How it Works Together</div>
+			<div class="content">
+				<p><b>HTML</b>: Language of the web; syntax and rules of text.<br>
+				<b>CSS</b>: Syntax and rules of how elements are displayed.</p>
+					<ul>
+						<li>Basic word in html language is a tag.</li>
+						<li>Browser turns html tags into elements that form a tree with <em>DOM</em>, Document Object Model.</li>
+						<li>Element is created from opening tag to closing tag; everything in between is content.</li>
+						<li>Each tag has a name or type which dictates which element would be created i.e. paragraph, div, image.</li>
+						<li>Each tag can have attributes with values.</li>
+					</ul>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson2.5">
+		<div class="title">Boxes Everywhere</div>
+			<div class="content">
+				<p>1. Every element is within a box or div. <br>
+				2. When creating a circle, the border-radius property is used to determine how to place the circle within the box.<br>
+				3. Webpage layout should be designed in a boxlayout.<br>
+				4. Style can be added to an element by adding an class attribute.</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson2.6">
+		<div class="title">Text Editors</div>
+			<div class="content">
+				<p>Special text editors, such as Sublime Text, are used by programmers to make coding simpler.</p>
+			</div>
+		</div>
+	</div>
+  
+  <div class="container">
+  <h2 id="lesson3">Adding CSS Style and HTML Structure</h2>
+	<div class="lesson" id="lesson3.1">
+		<div class="title">Avoiding Repetition</div>
+			<div class="content">
+				<p>It is very important to avoid repetition! Avoiding repetition helps to avoid errors, ensure proper html document
+					structure, and allows consistency. </p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson3.2">
+		<div class="title">Understanding CSS</div>
+			<div class="content">
+				<p><em><b>CSS</b></em>, or Cascading Style Sheets, are used to control the style of related HTML elements. A link to a style file
+				is done by inserting the following in the head section of the html document: &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</p>
+				<ul>
+					<li>A webpage may have several CSS files</li>
+					<li>Most specific rule of elements applies</li>
+					<li><b><u>Selector</u></b>: What elements of the page the style will apply to</li>
+					<li>p{} - will change the style for all content of that tag. This shows a change to all paragraphs</li>
+					<li>.class{} - will change the style of the content within a class</li>
+					<li>#id{} - will change the style of the content within an id</li>
+				</ul>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson3.3">
+		<div class="title">The Box Model</div>
+			<div class="content">
+				<p>The box model includes a margin, border, padding, and content.</p>
+					<ul>
+						<li><b><u>Content</u></b>: Image or text appearing on website</li>
+						<li><b><u>Padding</u></b>: Clears area around content</li>
+						<li><b><u>Border</u></b>: Forms around padding</li>
+						<li><b><u>Margin</u></b>: Clears area between border and edges of the screen. Can not change it's color</li>
+					</ul>
+					<p>Box-sizing is done to avoid having to recalculate size of content, padding, and borders for the size of the screen:<br><br>
+					*{<br>
+					&nbsp;box-sizing:border-box;<br>
+					&nbsp;}<br><br>
+					It doesn't include the margins. Box-sizing isn't compatible in older browsers. Must add browser specific prefixes:<br><br>
+					*{<br>
+					&nbsp;-webkit-box-sizing:border-box;<br>
+					&nbsp;-moz-box-sizing:border-box;<br>
+					&nbsp;-ms-box-sizing:border-box;<br>
+					&nbsp;box-sizing:border-box;<br>
+					&nbsp;}
+					</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson3.4">
+		<div class="title">Images</div>
+			<div class="content">
+				<p>Images are stored in files accessible to the webpage. Make sure to use the 'alt' attribute just in case the page can't load the image.</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson3.5">
+		<div class="title">Code - Test - Define</div>
+			<div class="content">
+				<p>1. Look for natural boxes<br>
+					2. Look for repeated styles and semantic elements<br>
+					3. Write HTML<br>
+					4. Apply styles (biggest to smallest)<br>
+					5. Fix things<br>
+					<em>**Development tools help to review changes made to a webpage without changing the HTML or CSS</em></p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson3.6">
+		<div class="title">Verifying HTML and CSS</div>
+			<div class="content">
+				<p><b>Validation Service</b> is a website used to check HTML and CSS files to make sure coding is up to standard and correct.
+				<b>ERRORS</b> show what corrections need to be made so that the webpage behaves correctly.<br>
+				The site for HTML markup is <a href = "http://validator.w3.org/">http://validator.w3.org/</a> and the site for CSS is 
+				<a href = "http://jigsaw.w3.org/css-validator/">http://jigsaw.w3.org/css-validator/</a></p>
+			</div>
+		</div>
+	</div>
+  
+	
+  <div class="container">
+  <h2 id="lesson4">Intro to Serious Programming</h2>
+	<div class="lesson" id="lesson4.1">
+		<div class="title">Computer</div>
+			<div class="content">
+				<p>
+                    The power of the <em>computer</em> is to do anything. It is a universal machine that we can program to do essential computation. 
+                </p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson4.2">
+		<div class="title">Computer Program</div>
+			<div class="content">
+				<p>
+                    A <em>computer program</em>, or just a program, is a sequence of instructions, written to perform a specified task on a computer. Some examples of computer programs are web browsers, games, mobile apps, and simple print statements.
+                </p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson4.3">
+		<div class="title">Programming Language</div>
+			<div class="content">
+				<p>
+                    A <em>programming language</em> is a formal constructed language designed to communicate instructions to a machine, particularly a computer. Python is one example of a programming language.
+                </p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson4.4">
+		<div class="title">Grammar</div>
+			<div class="content">
+				<p>
+                    Why do we need to invent new languages like Python to program computers, rather than natural languages like English or Mandarin? One reason is.. <b>ambiguity</b>!
+                </p>
+                <p>
+                    In order to learn about computer programming, we have to learn new languange. Python has a grammar - the way we're writing grammar in Python is called <em>"notation"</em>. <b>BNF</b> <em>(Backus-Naur Form)</em> is one of the notation techniques for context-free grammars, often used to describe the syntax of languages used in computing.
+                </p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson4.5">
+		<div class="title">Python Expressions</div>
+			<div class="content">
+			<p>
+                A Python <em>"expression"</em> is a legal Python statement. For example: <em>print 1 + 1</em> is a valid expression, but <em>print 1 + </em>(without a number at the end) is not.
+            </p>
+            <p>
+                This <a href="http://www.tutorialspoint.com/python/python_reg_expressions.htm"> link</a> does a good job of explaining the Python grammar for <em>"expressions"</em>.
+            </p>
+			</div>
+		</div>
+	</div>
+	
+  <div class="container">
+  <h2 id="lesson5">Python Variables and Strings</h2>
+	<div class="lesson" id="lesson5.1">
+		<div class="title">Assignment Statement</div>
+			<div class="content">
+				<p>
+					An <em> assignment statement </em> is when a name or variable is assigned an expression or value. For example:<br>
+					name = expression<br>
+					age = 42<br>
+					days = 31<br>
+				</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson5.2">
+		<div class="title">String</div>
+			<div class="content">
+				<p>
+					A <em> string </em> is denoted with single or double quotation marks: 'abc' or "abc". The first letters of variables
+					are always lower case.
+				</p>
+			</div>
+		</div>
+
+	<div class="lesson" id="lesson5.3">
+		<div class="title">Indexing Strings</div>
+			<div class="content">
+				<p>
+					<em>Indexing</em> is used to find certain characters within a string where the first character is 0, the next 1, the next 2 and etc. This is done by:<br>
+					<string>[<expression>]<br>
+					'udacity'[0] => u<br>
+					'udacity'[2] => a<br>
+				</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson5.4">
+		<div class="title">Subsequences</div>
+			<div class="content">
+				<p>
+					<em>Subsequences</em> gives the characters within the parameters noted in the expression. This is achieved by the expression:<br>
+					<string>[<expression1> : <expression2>] where the characters from expression1 to expression2 (but not including this character) are listed. For example:<br>
+					word[4:] => prints everything from the 4th (5th in chronological order) character<br>
+					word[:2] => prints everything from 0 index (1st character) stopping (but not including) at the 2nd (3rd) character.<br>
+					word[:] => prints the entire string
+				</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson5.5">
+		<div class="title">Find</div>
+			<div class="content">
+				<p>
+					The <em>find</em> expression gives the location or position of a string, <string>.find(<string>). If the string isn't found, the value given is -1. For example: <br>
+					word = 'what do you want'<br>
+					print word.find('do') => 5<br>
+					print word[5:] => do you want
+				</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson5.6">
+		<div class="title">Finding with Numbers</div>
+			<div class="content">
+				<p>
+					The index of the string can also be found using the expression: <string>.find(<string>,<number>). For example:<br>
+					word = 'what you do, what are you'
+					print word.find('do') => 9 (the index where the string begins)<br>
+					print word.find('you', 0) => 5 (the index where the first occurrence of 'you' is found after the 0 index)<br>
+					print word.find('you', 5) => 5 (the index where the first occurrence of 'you' is found after the 5th index)<br>
+					print word.find('you', 6) => 22 (the index where the first occurrence of 'you' is found after the 6th index)<br>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+  <div class="container">
+  <h2 id="lesson6">Input - Function - Output</h2>
+	<div class="lesson" id="lesson6.1">
+		<div class="title">Using Procedures</div>
+			<div class="content">
+				<p>
+                    A <em>procedure</em> or function is something that takes input, does something to that input, and then produces output. For example, a procedure named square might take a number as input and produce the square of that number as output.<br>
+					Example: .find('au',3)<br>
+                </p>
+				<p>
+                    A function or procedure is something that takes input, does something to that input, and then produces output. For example, a function named square might take a number as input and produce the square of that number as output.
+					They are made by starting a line of code with the keyword def and then giving a function name followed by the function parameters in parentheses. The line must end with a <em>: colon</em>. These parameters will eventually be replaced by actual values when the function is used (called).
+					In the <em>"body"</em> of the function, we write the code that specifies what to do with the input parameters. Every line in the function must be indented. And If you want your function to produce output, it must end with a return statement.
+				</p>
+				<p>
+                    For example, the following code could be the definition of a function called square:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>def square(x):</em><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>answer = x * x</em><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>return answer</em>
+                    <br><br>To use a function, we write the name of the function followed by the value(s) we want to give it in parentheses. Like this:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>print square(4)</em><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>>>>>16</em>                            
+                </p>
+				<p>
+                    Functions are tools that programmers can create and reuse forever! Once you've defined a function or procedure, you never have to define it again.
+                </p>
+				<p>
+                    The <em>return</em> keyword tells Python exactly what the function should produce as output. If a function doesn't have a return statement, then you'll get behavior like this:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>def add_two(x):</em><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>answer = x + 2</em><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>new_number = add_two(7)</em><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>print new_number</em><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>>>>>None</em>           
+				</p>
+			</div>
+		</div>
+	</div>
+	
+  <div class="container">
+  <h2 id="lesson7">Control Flow and Loops: If and While</h2>
+	<div class="lesson" id="lesson7.1">
+		<div class="title">Making Decisions</div>
+			<div class="content">
+				<p>
+                    The general Python syntax for a simple if statement is:
+                    <br><br><em><b>if</b> condition :</em>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>indentedSatementBlock</em>                  
+                    <br><br>If the condition is true, then do the indented statements. If the condition is not true, then skip the indented statements.
+                    <em><b>While</b></em> loops, like the <em>ForLoop</em>, are used for repeating sections of code - but unlike a <em>for</em> loop, 
+					the <em>while</em> loop will not run <em>n</em> times, but until a defined condition is met.    
+                </p>
+			</div>
+		</div>
+	</div>
+	
+  <div class="container">
+  <h2 id="lesson8">Debugging</h2>
+	<div class="lesson" id="lesson8.1">
+		<div class="title">Debugging Strategies</div>
+			<div class="content">
+				<p>
+					1.  <i>Examine error messages when programs crash.</i>
+					<br>The last line of Python Tracebacks will tell you what went wrong. Reading backwards from there will tell you more about where the problem occurred.
+					<br><br>2.  <i>Work from example code.</i>
+					<br>If your modified code doesn't work, comment it out and do step-by-step modifications to the example code until it does what you want.
+					<br><br>3.  <i>Make sure examples work.</i>
+					<br>Just because you find example code doesn't mean it will work in your system. Check the example code you're using to make sure it behaves the way you expect.
+					<br><br>4.  <i>Check (print) intermediate results.</i>
+					<br>When your code doesn't crash, but doesn't behave as expected, add print statements to your program to see where in the code things stop behaving correctly.
+					<br><br>5.  <i>Keep and compare old versions.</i>
+					<br>When you have a working version of your code, save it before you add to the code. This will give you something to go back to if you introduce too many new bugs.
+                </p>           
+			</div>
+		</div>
+	</div>
+	
+  <div class="container">
+  <h2 id="lesson9">Structured Data_Lists and For Loops</h2>
+	<div class="lesson" id="lesson9.1">
+		<div class="title">What is a List?</div>
+			<div class="content">
+				<p>
+					A <em>string</em> is a sequence of characters. A <em>list</em> is a sequence of anything.<br>
+					Example of a list: stooges = ['Moe', 'Larry', 'Curly']
+				</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson9.2">
+		<div class="title">Nested Lists</div>
+			<div class="content">
+				<p>
+					<em>Nested Lists </em> are lists within a list. For example:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mixed_up => ['apple', 3, 'orange', [1, 2, ['alpha', 'beta']]]
+				</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson9.3">
+		<div class="title">Mutation</div>
+			<div class="content">
+				<p>
+					A <em>mutation</em> is a change of value within a list after it is created. For example: <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p = ['H', 'e', 'l', 'l', 'o']<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p[0] = 'Y'<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p = ['Y', 'e', 'l', 'l', 'o']
+				</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson9.4">
+		<div class="title">Aliasing</div>
+			<div class="content">
+				<p>
+					If 2 variables refer to the same object, any object changed in one variable changes the other. For example:<br>
+					p = 'Yes'<br>
+					q = p<br>
+					q = 'No'<br>
+					p = 'No'
+				</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson9.5">
+		<div class="title">List Operations</div>
+			<div class="content">
+				<p>
+					To add an element to the end of a list, use: &lt;list&gt;.append(&lt;element&gt;)<br>
+					To combine lists, use: &lt;list&gt; + &lt;list&gt;<br>
+					To determine the length of a list, or number of elements in a list, use: len(&lt;list&gt;)
+				</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson9.6">
+		<div class="title">Loops on Lists</div>
+			<div class="content">
+				<p>
+					<u>While</u><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while &lt;test&gt;:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;block&gt;<br>
+					To print every element in a list:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def print_all_elements(p):<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i = 0<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while i &lt; len (p):<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print p[i]<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i = i + 1
+				</p>
+				<p>
+					We can use for loops to go through a list of strings and on nested lists.<br><br>
+					<u>For</u><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for &lt;name&gt; in &lt;list&gt;:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;block&gt;<br>
+					To print every element in a list:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def print_all_elements(p):<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for e in p:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print e<br><br>
+					To print the sum of a list:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def sum_list(p):<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result = 0 <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for e in p:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result = result + e<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return result
+			
+				</p>
+			</div>
+		</div>
+	</div>
+	
+  <div class="container">
+  <h2 id="lesson10">How to Solve Problems</h2>
+	<div class="lesson" id="lesson10.1">
+		<div class="title">Steps to Solve Problems</div>
+			<div class="content">
+				<p>
+					1. Understand the inputs
+                    <br>2. Understand the Outputs
+                    <br>3. Work through some examples by hand
+                    <br>4. Simple mechanical solution
+                    <br>5. Develop incrementally and test as we go
+				</p>
+			</div>
+		</div>
+	</div>
+	
+  <div class="container">
+  <h2 id="lesson11">Use Functions</h2>
+	<div class="lesson" id="lesson11.1">
+		<div class="title">Take a Break</div>
+			<div class="content">
+				<p>				Write a program that reminds a user to take a break. The reminder will execute every two hours, and when it does, it opens a browser 
+				to a specific Youtube video.<br>
+				Python has an existing function called <b>webbrowser.open</b>... and if you provide a URL as a string, it will open to that URL. Here's the syntax of that:
+				</p>
+				<p class="tabcode">
+				webbrowser.open ("https://www.youtube.com/watch?v=QH2-TGUlwu4")
+				</p>
+				<p>Once you put the above line into IDLE, save it as a .PY file (break time.py), then click Run > Run Module to execute it, and see what happens.</p>
+				<p class="tabcode">
+				Result: NameError: name 'webbrowser' is not defined
+				</p>
+				<p>Okay, we forgot to tell Python what browser to use. Use <b>import webbrowser</b> in the first line to fix that. So here is our code so far:</p>
+				<p class="tabcode">
+				import webbrowser<br>
+				webbrowser.open ("https://www.youtube.com/watch?v=QH2-TGUlwu4")
+				</p>
+				<p>Now let's figure out how to make the program wait to run for a defined period of time (such as, 2 hours)...</p>
+				<p class="tabcode">
+				time.sleep()
+				</p>
+				<p>This lets you let the program sit idle for the time you define. Oh, and one more thing, don't forget to use <b>import time</b> first, 
+				or else it will error. Lastly, the time.sleep value is in seconds. (Another hint, you can actually use time.sleep(2*60*60) -- which 
+				takes the number, times 60 seconds, times 60 minutes...). Here's the updated code:</p>
+				<p class="tabcode">
+				import time<br>
+				import webbrowser<br><br>
+				time.sleep(7200)<br>
+				webbrowser.open ("https://www.youtube.com/watch?v=QH2-TGUlwu4")
+				</p> 
+				<p>Now, how would we add a loop so it runs this code to take a total of three breaks?</p>
+				<ol>
+					<li>We need a counter, so every time the loop is run, the counter either increments to 3, or counts down from 3 to zero.</li>
+					<li>We need to check if the counter is equal to our total amount of times to run. (Such as, if counter &lt; 3:)</li>
+					<li>We may need to break out of the loop when finished?</li>
+				</ol>
+				<p>My attempt:</p>
+				<p class="tabcode"> 
+				counter = 0<br>
+				while counter != 3:<br>
+				<span class="twotabs">print "Hey - take a break maybe?"</span><br>
+				<span class="twotabs">counter = counter + 1</span>
+				</p>
+				<p>Instructor Answer:</p>
+				<p class="tabcode">
+				total_breaks = 3<br>
+				break_count = 0<br><br>
+				while (break_count &lt; total_breaks):<br>
+				<span class="twotabs">(codeblock)</span><br>
+				<span class="twotabs">break_count = break_count + 1</span>
+				</p>
+				<p>And to fancy the code up a bit, we can use time.ctime with print to show what time we kicked off the program. Below is our updated code:</p>
+				<p class="tabcode">
+				import time<br>
+				import webbrowser<br><br>
+				counter=0<br><br>
+				print ("This Timer Started on "+time.ctime())<br>
+				while counter != 3:<br>
+				<span class="twotabs">time.sleep(2*60*60)</span><br>
+				<span class="twotabs">print "Break Time!!"</span><br>
+				<span class="twotabs">webbrowser.open ("https://www.youtube.com/watch?v=QH2-TGUlwu4")</span><br>
+				<span class="twotabs">counter = counter + 1</span>
+				</p>
+				<p>	That's it! Python has a lot of great built-in functions in the <a href="https://docs.python.org/2.7/library/index.html" target="_blank">
+				<b>Python Standard Library</b></a>. Take a look through the library to see what else they have in there.</p> 
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson11.2">
+		<div class="title">Secret Message</div>
+			<div class="content">
+				<p>Someone has stolen your keys, and the answer to where they are is hidden in a folder full of pictures on your computer. The files 
+				are alphanumeric. The alpha characters when by themselves, sort the photos into the answer. But because they contain numeric characters,
+				the sort is all messed up. Problem is, the numerics are random. Some at the start of the filename, some at the end, and maybe some in 
+				the middle.Having to rename all those files to remove the numeric characters would take forever! Okay, so can we write a program that 
+				will do this for us? And how would you do it?<br>
+				Rename a bunch of files on your computer -- how would you do it?</p>
+				<ol>
+					<li>Point the program to a specific folder</li>
+					<li>Look for numeric characters in the filenames</li>
+					<li>Rename the file while removing the numeric characters</li>
+				</ol>
+				<p>Is that the correct way to go about it? Maybe... we'll find out.<br>
+				The instructor suggested:</p>
+				<ol>
+					<li>Looking at a folder, and getting a list of the filenames in that folder. </li>
+					<li>Rename those files.</li>
+				</ol> 
+				<p>Okay, let's get to building the program! (File path: c:\prank) - the zipfile can be found here: 
+				<a href="https://s3.amazonaws.com/udacity-hosted-downloads/ud036/prank.zip" target="_blank">https://s3.amazonaws.com/udacity-hosted-downloads/ud036/prank.zip</a></p>
+				<p>To start, we want to use a built-in standard function called OS. A sub-function of that is os.listdir('path') which as the name 
+				implies, returns a <b>list</b> of files in the path you specify. One thing to note about the path... start it with the letter <b>r</b>
+				it stands for raw path, so it takes the path string as it is, and doesn't interpret it as anything else.<br>
+				Here's a high-level of what we're going to create:</p>
+				<p class="tabcode">
+				import os<br>
+				def rename_files():<br>
+				<span class="twotabs">file_list = os.listdir(r'c:\prank')</span><br>
+				<span class="twotabs">print file_list</span><br>
+				<span class="twotabs"># code block to rename the files...</span><br><br> 
+				rename_files()</p>
+				<p>So as before, if you want to call a function from the <a href="https://docs.python.org/2.7/library/index.html" target="_blank">
+				<b>Python Standard Library</b></a>, you have to import the function first. Next, we gave the function a name - <b>rename_files</b>, 
+				and then we made the function get a list of files from 'c:\prank', but we assigned the list to a variable called <b>file_list</b> - 
+				and then we will display (print) the file_list variable to make sure it's correct.<br>
+				Next, we want to figure out how to rename the files in that directory (or list?) -- and as it turns out, if you search the Python 
+				Standard Library - OS function section -- you will find that there is a function that does just what we need... called 
+				<b>os.rename(src,dst)</b> -- now also when you read what that function does, you can see there are also a lot of considerations to 
+				take, especially regarding the destination (dst) and OS-specific issues.<br>
+				Because there are a <em>lot</em> of files in that folder, we will probably have to use a loop to get that function to rename each file.
+				So let's write a loop, using the <b>os.rename</b> function as the main action of the loop.</p>
+				<p class="tabcode">
+				for file_name in file_list:<br>
+				<span class="twotabs">os.rename(file_name, )</span></p>
+				<p>Okay, so we've gotten that far, but we still have no idea how to strip the numeric values from the file name... so we should figure
+				out how to do that part next before we can finish writing the <b>for</b> loop.<br>
+				Google to the rescue - turns out there is something that does just what we need, and that way we don't have to code a complex function
+				ourselves. It's called the <a href="http://www.tutorialspoint.com/python/string_translate.htm" target="_blank"><b>string.translate</b>
+				</a> method, that returns a copy of the input string, but all the characters have been translated using either the <b>table</b> or 
+				<b>deletechars</b> parameters.<br>
+				Now, to make the string.translate function work for us... we need to tell it what we want it to do.</p>
+				<ol>
+					<li>We start with specifying the string name -- <b>file_name</b>.translate</li>
+					<li>The first parameter of the function is <b>table</b> - which translates one set of characters to another. Since we aren't doing that, we specify the parameter as <b>none</b> -- so now our code looks like this: file_name.translate(None, </li>
+					<li>The second parameter of the function is a list of all the characters we want to remove... since we want to remove all numeric charaters, this is easy to define. So our code will look like this: file_name.translate(none, "0123456789")</li>
+				</ol>
+				<p>If you try running that in the python shell just to test, you'll see what your result of the test will be:</p>
+				<p class="tabcode">
+				file_name="48athens.jpg"<br>
+				print file_name<br>
+				file_name.translate(None, "0123456789")</p>
+				<p>So the result was a success! Now we have to figure out how to put that into our 'rename_files' function, which will look like this:</p>
+				<p class="tabcode">
+				import os<br>
+				def rename_files():<br>
+				<span class="twotabs">file_list = os.listdir(r'c:\prank')</span><br>
+				<span class="twotabs">print file_list</span><br><br>
+				<span class="twotabs">for file_name in file_list:</span><br>
+				<span class="threetabs">os.rename(file_name, file_name.translate(None, '0123456789'))</span><br><br> 
+				rename_files()</p>
+				<p>Because good programming involves good testing (or, testing at all!) - run the program and see what happens.<br>
+				Looks like we got an error. But what does the error message mean?</p>
+				<ol>
+					<li>My guess: There was no input specified when calling the rename_files() function.</li>
+					<li>Instructor answer: We may not be working for the correct directory.</li>
+				</ol>
+				<p>Python being a fairly competent programming language, there happens to be a way we can check to see what's going on. Using 
+				<b>os.getcwd()</b> or 'Get Current Working Directory'... we can actually see where the program is looking.</p>
+				<p>To put that into our code, we can assign <b>os.getcwd</b> to a variable, and print that variable... now, we probably want it to do 
+				this <em>before</em> we run the <b>for</b> loop, so we can check our work. Here's how...</p>
+				<p class="tabcode">
+				import os<br>
+				def rename_files():<br>
+				<span class="twotabs">file_list = os.listdir(r'c:\prank')</span><br>
+				<span class="twotabs">print file_list</span><br>
+				<span class="twotabs">saved_path = os.getcwd()</span><br>
+				<span class="twotabs">print ('The current working directory is ' + saved_path)</span><br><br>
+				<span class="twotabs">for file_name in file_list:</span><br>
+				<span class="threetabs">os.rename(file_name, file_name.translate(None, '0123456789'))</span><br><br> 
+				rename_files()</p>
+				<p>After running that as a test -- you can see that the directory is totally wrong. I guess that means we have to set the path/directory. 
+				We can do that by using the <b>os.chdir(path)</b> aka the 'change directory' function built into Python. One thing to remember is the right
+				place in the code to put this call. Here's how it will look after we use it:</p>
+				<p class="tabcode">
+				import os<br><br>
+				def rename_files():<br>
+				<span class="twotabs">file_list = os.listdir(r'c:\prank')</span><br>
+				<span class="twotabs">print</span><br>
+				<span class="twotabs">print file_list</span><br>
+				<span class="twotabs">saved_path = os.getcwd()</span><br>
+				<span class="twotabs">print</span><br>
+				<span class="twotabs">print ('The current working directory is ' + saved_path)</span><br><br>
+				<span class="twotabs">os.chdir('c:\prank')</span><br>
+				<span class="twotabs">for file_name in file_list:</span><br>
+				<span class="threetabs">os.rename(file_name, file_name.translate(None, '0123456789'))</span><br>
+				<span class="twotabs">os.chdir(saved_path)</span><br><br> 
+				rename_files()</p>
+				<p>One thing you'll notice is after we set the path, to c:\prank, after the <b>for</b> loop, we set the path back to the original 
+				current working directory value. It's generally a good idea to 'leave things the way you found them' if you make directory changes 
+				and whatnot. It will save you headaches later trying to figure out why something isn't working.<br>
+				Okay, so if you run the code, it won't error. It did what it was supposed to do! (Confirm this by checking the c:\prank folder) -- 
+				one final note -- if you want to see the program in action, you can get it to print the before/after filenames to the console as it 
+				makes it's changes. <br>
+				After a bit of reworking to 'make it my own' my final code looks like this:</p>
+				<p class="tabcode">
+				import os<br><br>
+				def rename_files():<br>
+				<span class="twotabs">file_list = os.listdir(r'c:\prank')</span><br>
+				<span class="twotabs">saved_path = os.getcwd()</span><br>
+				<span class="twotabs">print ('The current working directory is ' + saved_path)</span><br>
+				<span class="twotabs">print</span><br><br>
+				<span class="twotabs">os.chdir('c:\prank')</span><br>
+				<span class="twotabs">for file_name in file_list:</span><br>
+				<span class="threetabs">print ('Old name - ' + file_name + ' --> New name - ' + file_name.translate(None, '0123456789'))</span><br>
+				<span class="threetabs">os.rename(file_name, file_name.translate(None, '0123456789'))</span><br>
+				<span class="twotabs">os.chdir(saved_path)</span><br><br> 
+				rename_files()</p>
+			</div>
+		</div>
+	</div>
+	
+  <div class="container">
+  <h2 id="lesson12">Use Classes</h2>
+	<div class="lesson" id="lesson12.1">
+		<div class="title">Draw Turtles</div>
+			<div class="content">
+				<p>If you were to tell someone how to draw a box by walking around, what instructions would you give them?<br>
+				You would probably tell them something along the lines of:</p>
+				<ul>
+					<li>Step forward two steps</li>
+					<li>Turn left 90 degrees</li>
+					<li>Step forward two steps</li>
+					<li>Turn left 90 degrees</li>	
+					<li>Step forward two steps</li>
+					<li>Turn left 90 degrees</li>
+					<li>Step forward two steps</li>
+					<li>Turn left 90 degrees</li>
+					<li>Stop</li>
+				</ul>
+				<p>We can actually do the same thing, but using python instead. How? With a built-in function called <b><a href="https://docs.python.org/2/library/turtle.html" 
+				target="_blank">turtle</a></b>. Now, to use <b>turtle</b>, we have to use import again, and of course in order to draw using Python, 
+				we need to output it to a graphics window. To do that we will use <b>"window="</b>.<br>
+				Alright, with that in mind - let's get some code written to do what we explained previously in common english - but this time in code.</p>
+				<p class="tabcode">
+				import turtle<br><br>
+				def draw_square():<br>
+				<span class="twotabs">window = turtle.Screen()</span><br>
+				<span class="twotabs">window.bgcolor("black")</span><br><br>
+				<span class="twotabs">Nelson = turtle.Turtle()</span><br>
+				<span class="twotabs">Nelson = turtle.Pen()</span><br>
+				<span class="twotabs">Nelson.shape("classic")</span><br>
+				<span class="twotabs">Nelson.color("#00ccff")</span><br>
+				<span class="twotabs">Nelson.speed(1)</span><br><br>
+				<span class="twotabs">Nelson.forward(100)</span><br>
+				<span class="twotabs">Nelson.right(90)</span><br>
+				<span class="twotabs">Nelson.forward(100)</span><br>
+				<span class="twotabs">Nelson.right(90)</span><br>
+				<span class="twotabs">Nelson.forward(100)</span><br>
+				<span class="twotabs">Nelson.right(90)</span><br><br>
+				<span class="twotabs">Sara = turtle.Turtle()</span><br>
+				<span class="twotabs">Sara.shape("turtle")</span><br>
+				<span class="twotabs">Sara.color("white")</span><br>
+				<span class="twotabs">Sara.circle(75)</span><br><br>
+				<span class="twotabs">window.exitonclick()</span><br><br>
+				draw_square()</p>
+				<p>So first we start by importing <b>turtle</b> into Python. We then define a new function called <b>draw_square</b>. We then do some 
+				stuff we haven't done up until now: we call <em>classes</em> from inside <b>turtle</b>.<br>
+				We do this in two places - one by using <b>window = turtle.Screen</b> (which calls the Screen class within turtle, and assigns it to 
+				window) and then <b>Nelson = turtle.Turtle</b> which calls the Turtle class from within the turtle library, and assigns it to the name Nelson.<br>
+				What we are doing when we call a class and give it a name is creating an <b>object</b> or <b>instance</b> of that class. <br><br>
+				After all of that, we can assign specific <em>attributes</em> to the instance of the class such as the shape, the speed, and the color among many of the
+				other possible attributes available.<br><br>
+				Once we've done that, we can get to the business end of drawing that square. Notice how the language is pretty similar to common english, forward, right, etc. </p>
+				<p>Now that we drew one square called Nelson, we can create a second shape with its own unique attributes called Sara. They can be controlled the same using the same 
+				language, but behave and look a little different.</p>
+				<br><p>Now our code looks pretty simple, but there are some issues with what we've written so far. (Computer Science majors would be 
+				screaming at us right now) -- Namely, we're doing a lot of repetitive tasks, and well, drawing a circle and a square in a function 
+				that we called "draw_square" doesn't quite make sense.<br><br>
+				So let's fix our code, and try some more things while we're at it!</p>
+				<p class="tabcode">
+				import turtle<br><br>
+				def turtle_art():<br>
+				<span class="twotabs">window = turtle.Screen()</span><br>
+				<span class="twotabs">window.bgcolor("black")</span><br><br>
+				<span class="twotabs">draw_square()</span><br>
+				<span class="twotabs">draw_circle()</span><br>
+				<span class="twotabs">draw_triangle()</span><br><br>
+				<span class="twotabs">window.exitonclick()</span><br><br>
+				def draw_square():<br>
+				<span class="twotabs">Nelson = turtle.Turtle()</span><br>
+				<span class="twotabs">Nelson.shape("classic")</span><br>
+				<span class="twotabs">Nelson.color("#00ccff")</span><br>
+				<span class="twotabs">while s in range(1,5):</span><br>
+				<span class="threetabs">Nelson.forward(100)</span><br>
+				<span class="threetabs">Nelson.right(90)</span><br><br>
+				def draw_circle():<br>
+				<span class="twotabs">Sara = turtle.Turtle()</span><br>
+				<span class="twotabs">Sara.shape("turtle")</span><br>
+				<span class="twotabs">Sara.color("white")</span><br>
+				<span class="twotabs">Sara.circle(75)</span><br><br> 
+				def draw_triangle():<br>
+				<span class="twotabs">Horace = turtle.Turtle()</span><br>
+				<span class="twotabs">Horace.shape("triangle")</span><br>
+				<span class="twotabs">Horace.color("green")</span><br>
+				<span class="twotabs">for t in range(1,4):</span><br>
+				<span class="threetabs">Horace.backward(150)</span><br>
+				<span class="threetabs">Horace.left(120)</span><br><br>
+				turtle_art()</p>
+				<p>So what did we do?<br>
+				First, we broke each shape into its own separate function... square, circle, triangle... and then created a function called <b>turtle_art</b> 
+				that called all three shape functions. Technically we could have just renamed the draw_square function to draw_art and lumped everything into 
+				that, but having separate functions makes things a bit more controllable.<br><br>
+				We then added <b>for</b> loops into the mix to handle the repetitive parts, which shortens the code, and also allows us for more flexibility 
+				down the road. We also used <b>range</b> in the loop to control how many loops get run, which we can also change as needed.</p>
+			</div>
+		</div>
+		
+	<div class="lesson" id="lesson12.2">
+		<div class="title">Send Texts</div>
+			<div class="content">
+				<p>To send SMS messages using Python, we'll need to call a library called Twilio. However, Python doesn't include Twilio by default, 
+				you'll have to install it. Installing external libraries into Python is common practice, although Python has an extenside built-in 
+				library, many external libraries have been created to extend functionality.<br><br>
+				To import a library into Python, there are a few resources available to help you figure it out (aside from Google):</p>
+				<ul>
+					<li><a href="https://youtu.be/OfvdONdp5GI" target="_blank">Resource 1: How to Manually Install Twilio (Video)</a></li>
+					<li><a href="https://s3.amazonaws.com/udacity-hosted-downloads/ud036/How+to+install+Twilio+on+Windows.pdf" target="_blank">Resource 2: Installing Twilio for Windows</a></li>
+					<li><a href="http://www.twilio.com/docs/python/install#installation" target="_blank">Resource 3: Twilio's kbase</a></li>
+					<li><a href="http://www.instructables.com/id/How-to-install-Python-packages-on-Windows-7/" target="_blank">Resource 4: How to Install Python Packages on Windows</a></li>
+				</ul>
+				<p>After you have Twilio installed, you'll want to create an account on their site, set up a Twilio test phone number, and get an Auth Token and you Account SID.<br><br>
+				Once you've gone through the Twilio account setup... use this Python code:</p>
+				<p class="tabcode">
+				from twilio.rest import TwilioRestClient<br><br>
+				# Your Account Sid and Auth Token from twilio.com/user/account<br>
+				account_sid = "{{ACCT SID GOES HERE}}"<br>
+				auth_token = "{{AUTH TOKEN GOES HERE}}"<br>
+				client = TwilioRestClient(account_sid, auth_token)<br><br>
+				message = client.messages.create(body="Hey Nelson! You can program!",<br>
+				<span class="twotabs">to="+16045555555", # Replace with your phone number</span><br>
+				<span class="twotabs">from_="+17785555555") # Replace with your Twilio number</span><br>
+				print message.sid</p>
+				<p>Now, we're used to using <em>import</em>... but this time we see the word <b>from</b>, then <em>import</em>. What does <b>from</b> mean? </p>
+				<p><b>From</b> makes a reference to the <em>library</em> or a module from within a library, and then we specify what to import from 
+				within that library, or specific attributes of that module. (Here's the reference article: <a href="http://www.tutorialspoint.com/python/python_modules.htm" target="_blank">http://www.tutorialspoint.com/python/python_modules.htm</a>)</p>
+				<p>Now, if you want to see what this portion of the library actually does - check it out on GitHub - https://github.com/twilio/twilio-python</p>
+				<p>In our lesson we were asked: "What is a class?" and "What is an instance of a class" and also asked to see if we could explain what classes were like, using another metaphor if we could.</p>
+
+
+				<h4>What is a Class?</h4>
+				<p>A class can be described as an element of a library. Twilio is a library. Twilio has a whole set of elements inside that library. Each element has it's own abilities. The specific behaviors for the abilities are defined in the object/instance. </p>
+				<p>So a the Library is the container that stores all the Classes. The classes inside that library do things, each class does it's specific thing. When you create an instance/object of a class, you can further specify what the object does, if the Class allows for it.</p>
+
+
+				<h4>What is an instance of a class?</h4>
+				<p>An instance or object is like a child of the class, with it's own attributes and behaviours that follow the rules that the Class has outlined.</p>
+				<p>The library can be thought of as a blueprint for a house. Classes can be thought of as the rooms, the elevators, the heating/cooling, 
+				etc. When you create an instance/object - it's like you are picking a room. The class says a room has 4 walls, a floor, a ceiling, 
+				and a door. Your instance/object of the class, you can specify other things -- the position of the door for example, or the area/size of the room, the type of floor, the color of the walls, and so on.</p>
+
+				<h4>Is there another way to explain classes?</h4>
+				<p>Think of a novel. The characters in the novel can be considered classes. Each character can be an instance - because each character exists in the book, but each character has their own attributes, such as hair color, personality, etc.</p> 
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson12.3">
+		<div class="title">Profanity Editor</div>
+			<div class="content">
+				<p>How do we make a profanity filter that lets you know if your document has any profanity in it?</p>
+				<ol>
+					<li>Read text in document</li>
+					<li>Check text for profanity</li>
+				</ol>
+
+				<h4>Part One:</h4>
+				<p>For the first part, we'll write a method that locates a file, reads it, displays it's content, and closes the file. Here's how:</p>
+				<p class="tabcode">
+				def read_text():<br>
+				<span class="twotabs">quotes = open("C:\detect_profanity\swear_doc.txt") #Opens the swear doc and assigns it a name of quotes</span><br>
+				<span class="twotabs">contents_of_file = quotes.read() #by using .read - you are telling python to call the function 'read', and assigning all that text a variable of contents_of_file for future use</span><br>
+				<span class="twotabs">print (contents_of_file) #displays the quotes to the console</span><br>
+				<span class="twotabs">quotes.close() #Once the file has been read, we should close it -- it's good coding convention to do so</span><br><br>
+				read_text() </p>
+				<p>One thing we'll need to make that work is to create a folder in c:\ called detect_profanity, and add a text file inside of it called swear_doc.txt... and lastly put some 
+				text into that text file (you can copy and paste some of you favorite movie quotes, but 'accidentally' misspell one word to make it a swear word)</p>
+				<p>Once you run the above code in Python, you will see the movie quotes from the file displayed in the IDLE console. We're off to a good start.</p>
+				<p>Now, for def open()... where would you put that in the grand scheme of things? Inside the OS module? somewhere in the python standard library? In this case, it's part of the standard library, because it gets called 
+				so often in programming, that it would be better served to do so, instead of forcing programmers to have to call import OS or some other module.</p>
+				<p>Interestingly, the function Open returns an 'object' of the file type... wait... object, eh?</p>
+				<p>Remember this? nelson = turtle.Turtle() ? <b>nelson</b> is an object of Turtle. Just like when we have quotes = open(file_location) ? <b>quotes</b> is an object of file. Kind of the same but sort of different. We'll learn why later on.</p>
+
+				<h4>Part Two:</h4>
+				<p>For the second part, we have to check the text that was read for profanity. Here's how we will go about doing that...</p>
+				<p>In this case, we won't be using a dictionary file... those are cumbersome and require constant updating. Instead, there is a 
+				great site out there called <b><a href="http://wdyl.com" target="_blank">wdyl.com</a></b>, where you can pass in a query string, and it will return a true for false.</p>
+				<p>Since the WDYL web service exists, we have to learn how to use it. In this case we have to pass a query to it - but how do queries work? Here's some documentation: 
+				<b><a href="http://en.wikipedia.org/wiki/Query_string" target="_blank">http://en.wikipedia.org/wiki/Query_string</a></b></p>
+				<p>Okay, let's get some code together, and I'll include some comments on what does what and why:</p>
+				<p class="tabcode">
+				import urllib #we have to import this because check_profanity calls it<br><br>
+				def read_text():<br>
+				<span class="twotabs">quotes = open("C:\detect_profanity\swear_doc.txt") #Opens the swear doc and assigns it a variable name of quotes</span><br>
+				<span class="twotabs">contents_of_file = quotes.read() #by using .read - you are telling python to call the function 'read'</span><br>
+				<span class="twotabs">print (contents_of_file) #displays the quotes to the console</span><br>
+				<span class="twotabs">quotes.close() #Once the file has been read, we should close it -- it's good coding convention to do so</span><br>
+				<span class="twotabs">check_profanity(contents_of_file) #this runs the check_profanity function we wrote, and passes in the contents_of_file data that we read</span><br><br>
+				def check_profanity(text_to_check):<br>
+				<span class="twotabs">connection = urllib.urlopen("http://www.wdyl.com/profanity?q="+text_to_check)</span><br>
+				<span class="twotabs">#urllib which helps us get information from the internet, and .urlopen is a function which takes in a link to a website</span><br>
+				<span class="twotabs">#we then pass in the url, and add in the text string we want to check as part of the same URL</span><br>
+				<span class="twotabs">#we want to name this 'connection' for future use</span><br><br>
+				<span class="twotabs">output = connection.read()</span><br>
+				<span class="twotabs">#connection will return a true or false, we need to read that response and we then will store the response in a variable called output</span><br>
+				<span class="twotabs">print(output)</span><br>
+				<span class="twotabs">connection.close()</span><br>
+				<span class="twotabs">#Remember, when you open a connection, its a good idea to close it afterwards.</span><br><br>
+				read_text() </p>
+				<p>Hopefully that all made sense. Now for a quick question - where does <b>urllib</b> and <b>urlopen</b> fit in to the Python 
+				Standard Library? <b>urllib</b> is its own module in the library, <b>urlopen</b> is a function within <b>urllib</b>.</p>
+				<p>Alright, since the output is not too user-friendly, we made some small changes to the code to hide some of the outputs, and added 
+				an <b>if</b> statement to convert the true/false output into something more readable.</p>
+				<p class="tabcode">
+				import urllib #we have to import this because check_profanity calls it <br><br>
+				def read_text():<br>
+				<span class="twotabs">quotes = open("C:\detect_profanity\swear_doc.txt") #Opens the swear doc and assigns it a variable name of quotes</span><br>
+				<span class="twotabs">contents_of_file = quotes.read() #by using .read - you are telling python to call the function 'read'</span><br>
+				<span class="twotabs">#print (contents_of_file) #displays the quotes to the console</span><br>
+				<span class="twotabs">quotes.close() #Once the file has been read, we should close it -- it's good coding convention to do so</span><br>
+				<span class="twotabs">check_profanity(contents_of_file) #this runs the check_profanity function we wrote, and passes in the contents_of_file data that we read</span><br><br>
+				def check_profanity(text_to_check):<br>
+				<span class="twotabs">connection = urllib.urlopen("http://www.wdyl.com/profanity?q="+text_to_check)</span><br>
+				<span class="twotabs">#urllib which helps us get information from the internet, and .urlopen is a function which takes in a link to a website</span><br>
+				<span class="twotabs">#we then pass in the url, and add in the text string we want to check as part of the same URL</span><br>
+				<span class="twotabs">#we want to name this 'connection' for future use</span><br><br>
+				<span class="twotabs">output = connection.read()</span><br>
+				<span class="twotabs">#connection will return a true or false, we need to read that response and we then will store the response in a variable called output</span><br>
+				<span class="twotabs">#print(output)</span><br>
+				<span class="twotabs">connection.close()</span><br>
+				<span class="twotabs">#Remember, when you open a connection, its a good idea to close it afterwards.</span><br><br>
+				<span class="twotabs">if "true" in output:</span><br>
+				<span class="threetabs">print("There's a swear in there!!")</span><br>
+				<span class="twotabs">elif "false" in output:</span><br>
+				<span class="threetabs">print("Don't worry, your document is swear-free!")</span><br>
+				<span class="twotabs">else:</span><br>
+				<span class="threetabs">print("Uhh, something went wrong with reading the file. Sorry.")</span><br>
+				<span class="twotabs">#The if statement basically converts the output into something more readable, and displays that</span><br>
+				<span class="twotabs">#The elif is 'else if' so when the if statement fails, it moves onto else if, if that faisl, it goes to the else statement</span><br>
+				<span class="twotabs">#The else can be seen as a form of 'error handling' or a 'graceful error'</span><br><br>
+				read_text() </p>
+				<p>And now to summarize some ideas... </p>
+				<ul>
+					<li>brad = turtle.Turtle >>> brad is an object of Turtle.</li>
+					<li>quotes = open(file) >>> quotes is an object of File.</li>
+					<li>connection = urllib.urlopen() >>> connection is a file-like object</li>
+				</ul>
+				<p>If you look at how <b>open</b> and <b>urlopen</b> are implemented in Python, you'll find that the <b>init</b> function is being called, like in classes.</p>
+			</div>
+		</div>
+	</div>
+	
+  <div class="container">
+  <h2 id="lesson13">Make Classes</h2>
+	<div class="lesson" id="lesson13.1">
+		<div class="title">Movie Website</div>
+			<div class="content">
+				<p>In order to further understand classes, we should begin by creating one. So lets make a new class, 'Movie' - that our movie website
+				can consume, and each individual movie is an instance/object of the movie class.</p>
+				<p>Thing is, what data points should be part of the Movie class? Title? TV_Station? Youtube_trailer? Reviews? Storyline? Season? Poster_image? Episode_number?</p>
+				<p>Well, almost all of the above, save for tv_station, season, and episode_number... those are more specific to TV shows instead of movies.</p>
+				<p>Here's an example of how we want to use this:</p>
+				<p class="tabcode">
+				toy_story.storyline()<br>
+				>>> A story of a boy and his toys that come to life<br><br>
+				avatar.show_trailer()<br>
+				>>> The trailer for Avatar will play </p>
+				<p>Lets get started writing our code! First, let's start with things for class Movie to remember: Title, Storyline, Poster_image, 
+				Trailer_youtube...</p>
+				<p>Next, when we define the name of the class, notice how we use uppercase for the name... well, this is done based on what's described
+				in the Google Style Guide for Python (<a href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html" target="_blank">http://google-styleguide.googlecode.com/svn/trunk/pyguide.html</a>)
+				- it's basically a 'best practices' guide that Python programmers use to keep with standardized conventions, so other people familiar with the style guide can read your code easier.</p>
+				<p>We will write a new python file called <em>media.py</em>... inside that will be our Movie class (and potentially other classes), and also write a new python file called 
+				<em>entertainment_center.py</em>, which will import the <em>media.py</em> file, and call the Movie class to be used.</p>
+				<h4>&bull; media.py</h4>
+				<p class="tabcode">
+				class Movie(): #this creates a new class in media.py, and gives it a name of Movie<br>
+				<span class="twotabs">def __init__ (self, movie_title, movie_storyline, poster_image, trailer_youtube):</span><br>
+				<span class="twotabs">#__init__ reserves some space in memory for the rest of the arguments in the object, we don't specify an argument/value for self since it is implied/created/needs no value</span><br>
+				<span class="twotabs">#self is the object being created, and we also define arguments that get used as well</span><br>
+				<span class="threetabs">self.title = movie_title</span><br>
+				<span class="threetabs">self.storyline = movie_storyline</span><br>
+				<span class="threetabs">self.poster_image_url = poster_image</span><br>
+				<span class="threetabs">self.trailer_youtube_url = trailer_youtube</span><br> </p>
+				<h4>&bull; entertainment_center.py</h4>
+				<p class="tabcode">
+				import media #imports media.py for use<br><br>
+				toy_story = media.Movie("Toy Story",<br>
+				<span class="threetabs">"A story of a boy and his toys that come to life",</span><br>
+				<span class="threetabs">"http://upload.wikimedia.org/wikipedia/en/1/13/toy_story.jpg",</span><br>
+				<span class="threetabs">"https://www.youtube.com/watch?v=vwyZH85NQC4")</span><br>
+				#media is the name of the python file<br>
+				#Movie is a class within the media python file<br>
+				#Everything else you see are arguments that get passed to media.py > init<br>
+				print(toy_story.storyline)</p>
+				<p>So far so good... but what's going on behind the scenes when we run the code for toy_story = media.Movie(etc....)?</p>
+				<p>Well when we run it, here's a breakdown of what is going on:</p>
+				<ul style="list-style-type:none">
+					<li>toy_story >>> __init__ gets called.</li>
+					<li>self = toy_story</li>
+					<li>movie_title = "Toy Story" >>> Assigns the value of "Toy Story" to the movie_title variable</li>
+					<li>movie_storyline = "Toys come to life..." >>> Assigns the value of "Toys come to life..." to the movie_storyline variable</li>
+					<li>poster_image = "(link to the poster)" >>> Assigns the URL value to the poster_image variable</li>
+					<li>trailer_youtube = "(link to the YouTube video)" >>> Assigns the URL value to the trailer_youtube variable</li>
+				</ul>
+				<p>So when we create the object toy_story, all of the variables get initialized into memory space with the correct values.</p>
+				<p>One thing we want to do next, is to define a function show_trailer... that will open a browser window, and play the YouTube link for that trailer.</p>
+				<p>In this part, we will define show_trailer...</p>
+				<p class="tabcode">
+				import webbrowser # this is done to be able to make calls to the default web browser and pass links/urls to it<br><br>
+				def show_trailer(self): #we always add self as the first argument for instances defined within a class<br>
+				<span class="twotabs">webbrowser.open(self.trailer_youtube_url) #the URL is stored in the instance variable self.trailer_youtube_url</span> </p>
+				<p>Below is the 'finalized' code to see how it all works together... run the <em>entertainment_center.py</em> file and see what happens!!</p>
+				<h4>&bull; media.py</h4>
+				<p class="tabcode">
+				class Movie():<br>
+				<span class="twotabs">def __init__ (self, movie_title, movie_storyline, poster_image, trailer_youtube):</span><br>
+				<span class="threetabs">self.title = movie_title</span><br>
+				<span class="threetabs">self.storyline = movie_storyline</span><br>
+				<span class="threetabs">self.poster_image_url = poster_image</span><br>
+				<span class="threetabs">self.trailer_youtube_url = trailer_youtube</span><br><br>
+				<span class="twotabs">def show_trailer(self):</span><br>
+				<span class="threetabs">webbrowser.open(self.trailer_youtube_url)</span></p>
+				<h4>&bull; entertainment_center.py</h4>
+				<p class="tabcode">
+				import media #imports media.py<br><br>
+				toy_story = media.Movie("Toy Story", "A story of a boy and his toys that come to life", "http://upload.wikimedia.org/wikipedia/en/1/13/toy_story.jpg", "https://www.youtube.com/watch?v=KYz2wyBy3kc")<br><br>
+				avatar = media.Movie("Avatar", "A space marine on an alien planet", "http://upload.wikimedia.org/wikipedia/id/b/b0/Avatar-Teaser.Poster.jpg", "https://www.youtube.com/watch?v=5PSNL1qE6VY")<br><br>
+				high_fidelity = media.Movie("High Fidelity", "Rob, a record store owner and compulsive list maker, recounts his top five breakups, including the one in progress.", "http://upload.wikimedia.org/wikipedia/en/8/8f/High_Fidelity_poster.jpg", "https://www.youtube.com/watch?v=F2L58znA2e0")<br><br>
+				high_fidelity.show_trailer() </p>
+				<p>Once you've run the file, you'll see what it does. Pretty cool eh?</p> 
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson13.2">
+		<div class="title">Advanced Topics</div>
+			<div class="content">
+				<p><b>Class Variables</b> - Class Variables are variables that ALL instances or objects of the class will use/share.</p>
+				<p>For example: valid_ratings = ["G","PG","PG-13","R"]</p>
+				<p>Above is a list (can also be an array) of all possible ratings a movie could have. (I know there are way more ratings, but this is just an example)</p>
+				<p>Each instance/object can have it's own rating. Toy Story would be G, whereas Avatar would be PG-13... instead of specifying the ratings in each instance, 
+				you can create the class variable, and then each instance would call it, and set the value at the instance/object level.</p>
+				<p>Now, the Google Python Style Guide says that if we use a variable that is likely never going to change (or rarely), you put it in all uppercase. It's 
+				safe to assume that valid_ratings won't change any time soon, so in your media.py file, when you specify the variable, put it in all caps.</p>
+				<p><b>DOC Strings</b> - The __doc__ string allows you to view the documentation in the class that you call (if it exists). The syntax looks like this:</p>
+				<p class="tabcode">
+				turtle.Turtle.__doc__</p>
+				<p>If you were to run that at the console, it would display some documentation about the class Turtle. Give it a try and see for yourself!</p>
+				<p>Now how would you use it in your class Movie? Here's an example:</p>
+				<p class="tabcode">
+				import webbrowser<br><br>
+				class Movie():<br>
+				<span class="twotabs">""" This class provides the user a way to store movie related information. """</span><br>
+				<span class="twotabs">VALID_RATINGS = ["G","PG","PG-13","R"]</span><br>
+				<span class="twotabs">def __init__ (self, movie_title, movie_storyline, poster_image, trailer_youtube):</span><br>
+				<span class="threetabs">self.title = movie_title</span><br>
+				<span class="threetabs">self.storyline = movie_storyline</span><br>
+				<span class="threetabs">self.poster_image_url = poster_image</span><br>
+				<span class="threetabs">self.trailer_youtube_url = trailer_youtube</span><br><br>
+				<span class="twotabs">def show_trailer(self):</span><br>
+				<span class="threetabs">webbrowser.open(self.trailer_youtube_url)</span></p>
+				<p>Okay, now that we played around with that, you should be aware that Python has a number of pre-defined variables. (<a href="http://www2.lib.uchicago.edu/keith/courses/python/class/5/" 
+				target="_blank">http://www2.lib.uchicago.edu/keith/courses/python/class/5/</a>)</p>
+				<p>There are a couple more that we can play with, such as __name__ and __module__ </p>
+				<ul style="list-style-type:none">
+					<li>__name__ will output the name of the Class that is being called</li>
+					<li>__module__ will output the name of the Module that is being called</li>
+				</ul>
+				<p>
+				<a id="inheritance"></a>
+				<b>Inheritance</b> - Inheritance is a fairly simple but also a somewhat complex concept to understand. </p>
+				<ul style="list-style-type:none">
+					<li>A parent is a top-level object or class. The parent can have some attributes associated with it such as -- last_name and -- eye_color...</li>
+					<li>A child is the next level under a parent. It will inherit the partent attributes. It can also have its own attributes on its own such as -- number_of_toys...</li>
+				</ul>
+				<p>Some sample code might help explain it more:</p>
+				<p class="tabcode">
+				class Parent():<br>
+				<span class="twotabs">def __init__(self, last_name, eye_color):</span><br>
+				<span class="threetabs">print("Parent Constructor has been called.")</span><br>
+				<span class="threetabs">self.last_name = last_name</span><br>
+				<span class="threetabs">self.eye_color = eye_color</span><br><br>
+				class Child(Parent):<br>
+				<span class="twotabs">def __init__(self, last_name, eye_color, total_toys):</span><br>
+				<span class="threetabs">print("Child Constructor has been called.")</span><br>
+				<span class="threetabs">Parent.__init__(self, last_name, eye_color)</span><br>
+				<span class="threetabs">self.total_toys = total_toys</span><br><br>
+				#billy_cyrus = Parent("Cyrus","blue")<br>
+				#print(billy_cyrus.last_name)<br><br>
+				miley_cyrus = Child("Cyrus","Blue",5)<br>
+				print(miley_cyrus.last_name)<br>
+				print(miley_cyrus.total_toys) </p>
+				<p>&bull; First we define the Parent class.<br>
+				&bull; Next we define the __init__, which has to include self (always), and then any arguments (in this case, last_name, eye_color) that we will define.<br>
+				&bull; Next we will put in a print statement, so we know whenever the Parent class is being called.<br>
+				&bull; Next we define the two arguments attributes -- self.last_name = last_name and then self.eye_color = eye_color...<br><br>
+				&bull; Now we define the class Child... BUT... we include Parent as an argument. Because the child will inherit the parents attributes.<br>
+				&bull; Next we define the __init__ again, passing in self, then the two arguments/attributes from the parent, and then one argument/attribute that the child will have.<br>
+				&bull; Next we will put in a print statement, so we know whenever the Child class is being called.<br>
+				&bull; Next we define the argument attributes -- self.total_toys = total_toys</p>
+				<p>Making sense so far? When we run the following code... the output may seem strange, but we'll explain why in a minute...</p>
+				<p class="tabcode">
+				miley_cyrus = Child("Cyrus","Blue",5)<br>
+				print(miley_cyrus.last_name)<br>
+				print(miley_cyrus.total_toys)<br><br>
+				>>><br>
+				Child Constructor has been called.<br>
+				Parent Constructor has been called.<br>
+				Cyrus<br>
+				5 </p>
+				<p>Why did the output look like that? Here's why:</p>
+				<p class="tabcode">
+				miley_cyrus = Child("Cyrus", "Blue", 5)</p>
+				<ul>
+					<li>creates an instance of class Child, and gave it a name of miley_cyrus...</li>
+					<li>as soon as that is run, the __init__ inside class Child gets run.</li>
+					<li>the first line in the class Child is the print statement --> that's why it prints Child Constructor has been called.</li>
+					<li>after that, in the class Child, the constructor for the class Parent gets called.</li>
+					<li>the first item in the class Parent is the print statement... which is why it then prints Parent Constructor has been called to the console.</li>
+					<li>then the two instance variables last_name and eye_color get initialized into memory.</li>
+					<li>since there is nothing left to do in the Parent class, it moves back to the next line in the Child class - which is the instance variable for Child which has yet to be initialized</li>
+					<li>the instance variable for the Child class -- total_toys -- gets initialized into memory.</li>
+					<li>then there is nothing left to do, it will then move on to the next bit of code.</li>
+				</ul>
+				<p class="tabcode">
+				print(miley_cyrus.last_name)</p>
+				<ul>
+					<li>this gets executed, and outputs the last_name</li>
+				</ul>
+				<p class="tabcode">
+				print(miley_cyrus.total_toys)</p>
+				<ul>
+					<li>this gets executed, and outputs the total_toys</li>
+				</ul> 
+				<p><a id="override"></a>
+				<b>Inheritance: Reusing Methods</b></p>
+				<p>Let's begin with making some changes to our inheritance.py file... and add in a new method called show_info...</p>
+				<p class="tabcode">
+				class Parent():<br>
+				<span class="twotabs">def __init__(self, last_name, eye_color):</span><br>
+				<span class="threetabs">print("Parent Constructor has been called.")</span><br>
+				<span class="threetabs">self.last_name = last_name</span><br>
+				<span class="threetabs">self.eye_color = eye_color</span><br><br>
+				<span class="twotabs">def show_info(self): #the first argument of this method is self... and all this method does, is prints out the last_name and eye_color of the parent</span><br>
+				<span class="threetabs">print("Last Name - "+self.last_name)</span><br>
+				<span class="threetabs">print("Eye Color - "+self.eye_color)</span><br><br>
+				class Child(Parent):<br>
+				<span class="twotabs">def __init__(self, last_name, eye_color, total_toys):</span><br>
+				<span class="threetabs">print("Child Constructor has been called.")</span><br>
+				<span class="threetabs">Parent.__init__(self, last_name, eye_color)</span><br>
+				<span class="threetabs">self.total_toys = total_toys</span><br><br>
+				billy_cyrus = Parent("Cyrus","blue")<br>
+				#miley_cyrus = Child("Cyrus","Blue",5)
+				billy_cyrus.show_info() #This calls the show_info method using the Parents' instance billy_cyrus... </p>
+				<p>So when you run it, it will print out the last name and eye color of the billy_cyrus parent object/instance...</p>
+				<p>And now for the cool part. The Child instance can actually also call the show_info method from the Parent, even though we never defined it in the Child class. (See the example code change below:)</p>
+				<p class="tabcode">
+				class Parent():<br>
+				<span class="twotabs">def __init__(self, last_name, eye_color):</span><br>
+				<span class="threetabs">print("Parent Constructor has been called.")</span><br>
+				<span class="threetabs">self.last_name = last_name</span><br>
+				<span class="threetabs">self.eye_color = eye_color</span><br><br>
+				<span class="twotabs">def show_info(self):</span><br>
+				<span class="threetabs">print("Last Name - "+self.last_name)</span><br>
+				<span class="threetabs">print("Eye Color - "+self.eye_color)</span><br><br>
+				class Child(Parent):<br>
+				<span class="twotabs">def __init__(self, last_name, eye_color, total_toys):</span><br>
+				<span class="threetabs">print("Child Constructor has been called.")</span><br>
+				<span class="threetabs">Parent.__init__(self, last_name, eye_color)</span><br>
+				<span class="threetabs">self.total_toys = total_toys</span><br><br>
+				billy_cyrus = Parent("Cyrus","blue")<br>
+				#billy_cyrus.show_info()<br><br>
+				miley_cyrus = Child("Cyrus","Blue",5)<br>
+				miley_cyrus.show_info() </p>
+				<p>The output of this code would read as follows: </p>
+				<ul style="list-style-type:none">
+					<li>>>></li>
+					<li>Parent Constructor has been called.</li>
+					<li>Child Constructor has been called.</li>
+					<li>Parent Constructor has been called.</li>
+					<li>Last Name - Cyrus</li>
+					<li>Eye Color - Blue</li>
+				</ul>
+				<p>That's all fine and dandy, but what happens if we also define a method called show_info inside the Child class?</p>
+				<p class="tabcode">
+				class Child(Parent):<br>
+				<span class="twotabs">def __init__(self, last_name, eye_color, total_toys):</span><br>
+				<span class="threetabs">print("Child Constructor has been called.")</span><br>
+				<span class="threetabs">Parent.__init__(self, last_name, eye_color)</span><br>
+				<span class="threetabs">self.total_toys = total_toys</span><br><br>
+				<span class="twotabs">def show_info(self):</span><br>
+				<span class="threetabs">print("Last Name - "+self.last_name)</span><br>
+				<span class="threetabs">print("Eye Color - "+self.eye_color)</span><br>
+				<span class="threetabs">print("Number of Toys - "+str (self.total_toys)) #Note, to get this to work, we had to wrap the number inside a string function... hence the +str</span> </p>
+				<p>Okay, what happens when you run the changed code? It output the show_info method defined in the Child class instead. </p>
+				<p>So even though the parent had a method inside by the same name, we overrode that by defining a method by the same name in the Child class. This 
+				overriding of behavior is called "<b>Method Overriding</b>".</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson13.3">
+		<div class="title">Inheritance</div>
+			<div class="content">
+				<p>So we learned a bit on inheritance and reusing methods. We can tie the concept of inheritance to something else that we had previously learned in this course: <b><a href="https://css-tricks.com/how-css-selectors-work/" 
+				target="_blank">CSS Inheritance</a></b>.</p>
+				<p>In an abstract way, they relate to Python Classes because the Parent (or top-level) is the building block, and each child (lower-level) inherits the parents attributes, but can also have their own... but here's how CSS is similar:</p>
+				<h4>&bull; Example 1:</h4>
+				<p>Let's try to explain this with some examples. Let's say in your CSS document, you created a class called <b>big_pink_text</b>. When you apply that class to a &lt;div&gt; &lt;/div&gt; 
+				tag, it will make everything inside it big and pink.</p>
+				<p><b>CSS:</b></p> 
+				<p class="tabcode">
+				.big_pink_text<br>
+				{<br>
+				color: #FF66CC;<br>
+				font-size: 18px;<br>
+				}</p>
+				<p>So when you create a &lt;div&gt; and assign it the class <b>big_pink_text</b>, everything inside would look like this: <span class="big_pink_text">some text</span>... </p>
+				<p>You can think of that CSS Class as a Parent in a way. And everything inside that &lt;div&gt; is the child. </p>
+				<p>When you use the <b>&lt;em&gt;&lt;/em&gt;</b> and <b>&lt;b&gt;&lt;/b&gt;</b> tags inside that parent, they inherit the style (big, pink text) from the parent. </p>
+				<p><b>So this:</b><br><br>
+				&lt;div class=&quot;big_pink_text&quot;&gt;<br>
+				The &lt;em&gt;emphasis&lt;/em&gt; and &lt;b&gt;bold&lt;/b&gt; tags inherit the behavior of the parent class big_pink_text. <br>
+				&lt;/div&gt;<br><br>
+				<b>Would look like this:</b><br><br>
+				<span class="big_pink_text">
+				The <em>emphasis</em> and <b>bold</b> tags inherit the behavior of the parent class big_pink_text. 
+				</span></p> 
+				<h4>&bull; Example 2</h4>
+				<p>One more example using &lt;div&gt; tags and inheritance:</p>
+				<p>So we created the class called <b>big_pink_text</b>, and we saw what that does. Now lets create another class called <b>ugly_font</b> 
+				that when used, would apply an unpleasant font.</p>
+				<p>When we put a &lt;div&gt; inside another &lt;div&gt; and apply different classes to those, you can see how inheritance works again...</p>
+				<p>First, here's the CSS for each class:</p>
+				<p class="tabcode">
+				.big_pink_text<br>
+				{<br>
+				color: #FF66CC;<br>
+				font-size: 18px;<br>
+				}<br><br>
+				.ugly_font<br>
+				{<br>
+				font-family: "Comic Sans MS", cursive, sans-serif;<br>
+				font-style: italic;<br>
+				}</p>
+				<p>And now for what the HTML would look like:</p>
+				<p class="tabcode">
+				&lt;div class=&quot;big_pink_text&quot;&gt;<br />
+				Here is some text in the 'parent' class of Big Pink Text... <br />
+				&lt;div class=&quot;ugly_font&quot;&gt;<br />
+				Here is some text using another class called Ugly Font. Because this is being used underneath (or inside) of the Parent class of Big Pink Text, notice how it inherits the color, and the size, but as a child it also has it's own attributes - which happen to be the ugly font that we defined.<br />
+				&lt;/div&gt;<br />
+				And lastly, here is some more text, but it is outside of the 'child' class of Ugly Font, and therefore doesn't inherit it's additional attributes of the ugly font.<br />
+				&lt;/div&gt; </p>
+				<p>And this is how it would look in the webpage itself: </p>
+				<p class="big_pink_text">
+				Here is some text in the 'parent' class of Big Pink Text... notice how it is taking on the attributes of the parent class? But it's not taking on any other attributes from other classes...<br><br>
+				<span class="ugly_font">
+				Here is some text using another class called Ugly Font. Because this is being used underneath (or inside) of the Parent class of Big Pink Text, notice how it inherits the color, and the size, but as a child it also has it's own attributes - which happen to be the ugly font that we defined.
+				</span><br><br>
+				And lastly, here is some more text, but it is outside of the 'child' class of Ugly Font, and therefore doesn't inherit it's additional attributes of the ugly font.</p> 
+				<p>Hopefully that explains a little better how inheritance works, and how it relates to Python. In the <b><a href="#inheritance">previous section</a></b> about Class Inheritance, think of it in terms 
+				like this: Billy Cyrus is the big pink text, and Miley Cyrus is the ugly font.</p>
+			</div>
+		</div>
+	
+	
+	<div class="lesson" id="lesson13.4">
+		<div class="title">Method Overriding</div>
+			<div class="content">
+				<p>While we generally want a child object to inherit it's parents behavior and attributes, sometimes we want our child to behave a little different from the parent. We can do this with a <b>Method Override</b>.</p>
+				<p>Going with the previous examples, in CSS you can override styling, much in the same way as you can override behaviors in Python. Now, in Python you do so by specifying this 
+				behavior using the same name... and in CSS it's not any different.</p>
+				<p>Remember how we specified two different classes in CSS, big_pink_text, and ugly_font? 
+				Well what if we wanted ugly_font to be smaller than the parents behavior? </p>
+				<p>In the previous example, the parent font was 18px. But we want the ugly_font to be way smaller, so we have to override what it is 
+				inheriting from the parent.</p>
+				<p>How do we do this? Here's how:</p>
+				<p class="tabcode">
+				.big_pink_text<br>
+				{<br>
+				color: #FF66CC;<br>
+				font-size: 18px;<br>
+				}<br><br>
+				.ugly_font<br>
+				{<br>
+				font-family: "Comic Sans MS", cursive, sans-serif;<br>
+				font-style: italic;<br>
+				<b>font-size: 12px;</b> <span style="color: black">&lt;-- See this right here? That's the override.</span><br>} </p>
+				<p>Okay, but how does that look in the webpage? The HTML will still be exactly the same, the class used will still be the same... we just added one more attribute to the class <b>ugly_font</b>. Well, 
+				here's how it appears after the override:</p>
+				<p class="big_pink_text">
+				Here is some text in the 'parent' class of Big Pink Text... notice how it is taking on the attributes of the parent class? But it's not taking on any other attributes from other classes...<br><br>
+				<span class="ugly_font_override">
+				Here is some text using another class called Ugly Font. Although this is being used underneath (or inside) of the Parent class of Big Pink Text, the parent class used font-size 18, but our child class used font-size 12, so because the attribute has the same name, it overrides the inheritance from the parent.
+				</span><br><br>And lastly, here is some more text, but it is outside of the 'child' class of Ugly Font, and therefore doesn't inherit it's additional attributes 
+				of the ugly font?</p>
+				<p>Going back to the <a href="#override">previous Billy Cyrus / Miley Cyrus example</a> - there we added the show_info method into the Child class, 
+				which overrode the behavior that it inherited from the Parent class.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+    <h2 id="lesson14">Concepts</h2>
+	<div class="lesson" id="lesson14.1">
+		<div class="title">Vocabulary</div>
+			<div class="content">
+				<p><b>Class</b> - A blueprint or template which have information/instructions defined inside of them. </p>
+				<p class="tabbed">
+				Think of a class like a recipe. It tells you how to cook something and what ingredients to use.</p>
+				<p><b>Instance</b> - An instance is a portion of a class, that has its own specific behavior, but still follows the main guidelines of the Class. </p>
+				<p class="tabbed">
+				Going back to the concept of the Class being the recipe, but when you create an Instance (Object) of that class - say "Pork Chops" - you use the recipe to instruct you how to make the meal, 
+				but you can control how many pork chops to make, how long to cook them, any additional ingredients you want to add or leave out, etc.</p>
+				<p><b>Constructor</b> - When you create an instance of a class, the constructor is called - __init__ - it initializes all of the data associated with the instance, and loads it into memory for future use. </p> 
+				<p><b>Self</b> - The constructor uses the keyword Self, it's itself... so when the instance Toy_Story is created, the Self is Toy_Story.</p> 
+				<p><b>Instance Variable</b> - All of the variables associated with the specific instance. They are unique to an object, and can be called using Self keyword inside the class, and the instance name outside the class.</p> 
+				<p><b>Instance Method</b> - A function that is defined within a class, but is associated with an instance(object) and have the first argument as self.</p>
+			</div>
+		</div>
+	
+	<div class="lesson" id="lesson14.2">
+		<div class="title">Object Oriented Programming</div>
+			<div class="content">
+				<h4>What is an "Object" in Object Oriented Programming?</h4>
+				<p>An object can be either <em>something</em> that contains data (such as Lists or Arrays), or <em>something</em> that contains procedures (Methods, Functions, etc).</p>
+				<p>You generally give an object a meaningful name, for example <span class="spancode">"small_box"</span> or <span class="spancode">"movie_name"</span>, usually something that describes it if you can.</p>
+				<p>In an abstract way of thinking, an object that is something or does something, and you make reference to the name you give that 'thing', to use in your program - but I'll try to explain that next:</p>
+				<p><b>&bull; An Object as Data:</b></p>
+				<p>If an object is data, you can call the object <span class="spancode">"show_aired_date"</span>, which in that context would mean that object contains data about when a show aired on TV.</p>
+				<p>We don't actually have to know all of the data associated with that object, we just know what it does, it provides us with data when a show aired on TV, not every single date for every single show. </p>
+				<p><b>&bull; An Object as a Procedure:</b></p>
+				<p>If an object is a Procedure (method), say <span class="spancode">"draw_triangle"</span>, you can call it <span class="spancode">"green_triangle_1"</span> if you plan to use that method 
+				over and over to draw different types of triangles. </p>
+				<p>Now, <span class="spancode">"draw_triangle"</span> itself is an object. It's a method that has code to tell Python how to draw a triangle. But we don't need to know the specifics, we just know that when we use 
+				<span class="spancode">"draw_triangle"</span> - it does just that. </p>
+				<p>Also, <span class="spancode">"green_triangle_1"</span> is kind of an object of an object if you think about it. It still will draw a triangle when we call it, but it'll be a green triangle because we'd specify additional 
+				attributes to turn the triangle green, and maybe it could be a small triangle if you wanted, etc.</p>
+				<p><b>&bull; Benefits:</b></p>
+				<p>A big benefit of using objects is that a lot of methods have already been written as part of the Python Standard Library, so you can save yourself a lot of time and effort by reusing 
+				code that has already been written. </p>
+				<p>Also, with a bit of research and reading, you can probably find External Libraries that might do things that you need, again without having to code them, you just import the library and create an object to call the 
+				methods you want to use from the libraries that you imported.</p>
+				<p>In traditional programming, a program would be a series of logic written to execute line by line, and complex behavior was difficult to account for. The problem with this is it's not ideal for re-usability of code, repetitive tasks, 
+				debugging, and so on... because you are writing code that does something, based on conditions and logic.</p>
+				<p>With Object-Oriented Programming however, you can handle a lot of the drawbacks that you would encounter with traditional programming.</p>
+				<p>&bull; <b>Re-usability:</b> </p>
+				<p>Python has a large set of libraries, and classes within that do specific things. A programmer only needs to know a little bit about what those things do, and it saves them from having to write complex functions by hand to do things. These libraries, 
+				once imported, can be used multiple times in a program in multiple places - all without having to re-write code.</p>
+				<p>Looking back at the <span class="spancode">draw_turtle</span> lesson, we created a function that drew a square, and were able to reuse that code by giving names to different objects/squares we would want to draw, and reused draw_square for each instance 
+				that we wanted to make.</p>
+				<p>&bull; <b>Repetitive tasks:</b></p>
+				<p>The old way to program was inefficient because to do something more than once, you had to write out the code you had already written to run it again (like in our original <a href="#lesson2">"Draw a Square"</a> example). With Python, repetitive tasks are made simple. You can make a 
+				function and include a loop, or you can call already-written code and specify a loop there. </p>
+				<p>&bull; <b>Expandability:</b></p>
+				<p>When you write a function (or plan to use a class within a library), it has its own pre-defined behavior that you can modify. The benefit to this is you can spawn multiple instances (or Objects) of this behavior to use over and over, 
+				in the same program or in multiple programs.</p>
+				<p>In regards to classes, you can create an instance of that class, give it a name, and specify its own behavior... and then you can create another instance with a new name that does almost the same thing, but also can have 
+				its own unique attributes as well.</p>
+				<p>&bull; <b>Organization:</b></p>
+				<p>Object Oriented Programming allows you to organize the behavior and functionality, as well as your data with meaningful names, which can help you set up and use your data in a way that makes sense, as well as being able to structure your programs behavior by assigning names 
+				to specific functionality – and calling in those behaviors by name.</p>
+				<p>In a past example, we structured our data for the Movie website by using a list (we could have also used an array), using this example: \
+				<span class="spancode">valid_ratings = ["G","PG","PG-13","R"]</span>. Also going back to the <span class="spancode">draw_art</span> example, 
+				I had broken down functionality into separate operations such as <span class="spancode">draw_square</span>, <span class="spancode">draw_triangle</span>, and <span class="spancode">draw_circle</span>, and made them all work together using <span class="spancode">draw_art</span>.</p>
+				<p>So a number of complex operations are made simple by defining some functionality, and then giving them names that make sense.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+  <h2 id="lesson15">Add Comments</h2>
+	<div class="lesson" id="lesson15.1">
+		<div class="title">Servers in More Detail</div>
+			<div class="content">
+				<p>
+					A server is a computer whose primary purpose is to handle and respond to HTTP requests. An example of this is when a <em>client</em> 
+					(web browser) requests data (a website or other file) from a server; the server may then respond by sending a status message 
+					(HTTP response) along with the contents of the requested object to the client. Aside from static websites and files, the 
+					requested <em>data</em> may also represent a web application in which a server dynamically generates content based on HTTP 
+					requests from a web browser or other interface.
+				</p>
+                <p>
+					The most common protocol for communication between clients and servers is called HTTP, for Hyper Text Transfer Protocol. 
+					HTTP provides a language and syntax for requests and responses between computers and servers. GET requests are often 
+					used for for requesting data (like when entering a URL in the address bar of a web browser), and POST requests are 
+					often used when sending data to a server for storage or processing (like when submitting information in an HTML form). 
+					Both types of requests are followed by HTTP responses including a variety of status codes and brief reason phrases, 
+					followed by additional details about the response. As described above, a response message from a server may or may 
+					not be accompanied by some requested data (following a GET request), or the delivery of a response message may coincide 
+					with the server actually storing or doing something with data being sent to it (following a POST request); or the server 
+					may do nothing in the case that it sends an unsuccessful response.
+				</p>
+			</div>
+		</div>
+		
+		<div class="lesson" id="lesson15.2">
+		<div class="title">Validation of User Input</div>
+			<div class="content">
+				<p>
+					There are several reasons that servers should validate data received by clients. One reason is site security: in order 
+					to prevent web applications and databases from being hacked, manipulated, or broken by malicious clients, servers should 
+					be able recognize bad input and deal with it appropriately. Bad data may take the form of any user input, including 
+					HTTP GET parameters in a URL or HTML form data. As a countermeasure to malicious activity, web applications should 
+					verify all data inputs on the server-side to make sure that it is of the correct type and within the constraints 
+					expected by the web application.
+				</p>
+            	<p>
+					An equally important reason to validate user input is to ensure a favorable user experience of web apps. For example, 
+					the payment form of an online store should check the format and length of a credit card number to ensure that it is 
+					a valid card number. Imagine what happens when a user accidentally omits a number from her credit card -- the server 
+					should be able to return the form to the user with a message to re-enter the card number (in many cases the returned 
+					form should also preserve the data previously submitted by the user, although this may not be good practice for credit 
+					card numbers). If a customer is met with a blank form or has to make a phone call to the online store to confirm that 
+					their order was received, chances are they’ll simply take their business elsewhere. The examples shown in the course 
+					involved a web form allowing users to input their birthdays. A web app that does not implement proper verification may 
+					respond with a “thank you” message even for partially invalid inputs like “Flubuary 34, 1947,” whereas a server doing 
+					proper verification should return the form to the user with an error message (or better yet, an error message specifying 
+					the invalid month and date entries).
+				</p>
+			</div>
+		</div>
+		
+		<div class="lesson" id="lesson15.3">
+		<div class="title">HTML Templates and Abstraction</div>
+			<div class="content">
+				<p>
+					Templates are libraries that allow programmers to efficiently build complicated strings, most commonly HTML strings. The 
+					HTML Templating engine that we used in this course was Jinja2, which runs on Python. Jinja2 includes Python’s built in 
+					abstractions like for loops and conditional statements, as well as a simple syntax for string substitutions which we can 
+					insert directly into HTML files for rendering HTML content dynamically. HTML Templates also allow programmers to keep HTML 
+					separate from the files containing their web app code, as this is generally considered a best practice.
+				</p>
+            	<p>
+					For my stage 4 project, I built web app which allows visitors to post comments at the bottom of my notes page. While my page 
+					may potentially display a large number of comments (all of which will appear as separate divs when viewing the page source in 
+					a web browser), all of these entries are rendered on-the-fly with a Jinja2 for loop which is only around 10 lines of code, 
+					involving an easy-to-understand <span class="inline_code">&#123;% for comment in comments %&#125;</span> abstraction, in my 
+					HTML file.
+				</p>
+            	<p>
+					I’ll admit, my course notes HTML file is still lengthy…one can imagine that if I redesigned my page to implement a similar form 
+					for posting new lesson topics &amp; simply pushing my entries to Google’s Datastore, I would likely reduce my HTML file from 
+					800+ lines of code to probably fewer than 100 lines conservatively. I haven’t implemented this yet, mainly because I’m still 
+					very new at App Engine &amp; would like to code this in a proper way -- but I definitely see the potential for eliminating 
+					redundant code and at the same time making my website functional and dynamic.
+				</p>
+			</div>
+			
+		<div class="comment">
+			<br>
+			<br>
+			{% for comment in comments -%}
+			{% if comment.author %}
+			<b>{{ comment.author.email }}
+				{% if user == comment.author.identity %}
+				(You = )  
+				{% endif %}
+			</b> wrote:
+				{% else %}
+				(Anonymous)  
+				{% endif %}
+		</div>
+		<div class = "container">
+			<div class = "title">
+				<div>          
+					{{ comment.title }}
+				</div>
+			</div>
+			<div class="content"><p>
+				<br> 
+				{{ comment.content}} </p>
+			</div>
+		</diV>
+		</div>
+       {% endfor %}
+ 
+		<form action="/?" method="post">
+			<b> Title </b>
+				<div><textarea name="title" rows="2" cols="60"></textarea>
+				</div>
+			<b> Description </b>
+				<div><textarea name="content" rows="5" cols="100"></textarea>
+				</div>
+				<div><input type="submit" value="Add Comment"></div>
+		</form>
+		<a href= {{ url|safe }} > {{ url_linktext }} </a>
+	</div>
+	</div>
+	</div>
+	</div>	
+	</div>		
+	</div>
+</body>
+</html>

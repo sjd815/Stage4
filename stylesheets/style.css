@@ -1,0 +1,140 @@
+/*CSS for Udacity Project: style.css
+Stephen J. Davis*/
+
+body 			
+{
+padding: 20px 10px;
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+max-width: 2000px;
+margin: 0 auto; 
+font-size: 1.3em;
+background-color: #2B3856;
+}    
+
+h1 
+{
+text-align: center;
+color: #CCCCCC;
+}
+
+h2 
+{
+margin: 0px 20px;
+color: #CCCCCC;
+}
+
+p 
+{
+margin: 20px 0;
+line-height: 30px; 
+}
+
+ol
+{
+color: #CCCCCC;
+}
+
+.TOC
+{
+margin: 0px 100px;
+}
+
+.TOC a
+{
+text-decoration: none;
+color: #CCCCCC;
+font-weight: bold;
+}
+
+.TOC a:hover
+{
+text-decoration:underline;
+color: black;
+}
+
+.TOClessons
+{
+list-style-type: upper-roman;
+}
+
+.TOClist
+{
+line-height: 40px;
+list-style-type: lower-roman; 
+}
+
+.TOCul
+{
+display: block;
+list-style-type: none;
+}
+
+.title 
+{
+font-family: "Times New Roman", Times, serif;
+font-size: 1.5em;
+font-weight: bold;
+margin: 20px;
+text-align: center;
+color: #000000;
+}
+
+.container			
+{
+background-color: #000000;
+border-radius: 20px;
+border-style:ridge; 
+border-color: #996699; 
+border-width:10px; 
+color: white;
+padding: 20px 40px 0px 40px;
+margin: 50px 200px;
+}
+
+.circled 
+{ 
+display: inline-block;
+background-color: #F16274;
+border-radius:50%;
+cursor: pointer;
+position: absolute;
+color: white;
+width: 45px;
+height: 45px;
+border-style: solid;
+border-width: 2px;
+border-color: white;
+}
+
+.tabcode 
+{ 
+padding-left:1.5em;
+}
+
+.twotabs 
+{
+padding-left:2.5em;
+}
+
+.lesson
+{
+background-color: #996699;
+padding: 4px;
+margin: 10px;
+border-style: groove;
+border-color: #006699;
+border-radius: 10px;
+border-width: 10px;
+color: black;
+}
+
+.content
+{
+font-family: "Times New Roman", Times, serif;
+font-size: 1em;
+font-weight: lighter;
+margin: 20px;
+color: #000000;
+}
+
+

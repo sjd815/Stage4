@@ -1,0 +1,22 @@
+application: stage4-1086
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+# [START handlers]
+handlers:
+
+- url: /stylesheets
+  static_dir: stylesheets
+- url: /.*
+  script: stage4.app
+# [END handlers]
+
+# [START libraries]
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
+# [END libraries]
