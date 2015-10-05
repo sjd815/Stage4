@@ -1,7 +1,4 @@
-import webapp2
-import urllib
-import jinja2 
-import os
+import webapp2, urllib, jinja2, os
 import time
              
 from google.appengine.ext import ndb
@@ -15,30 +12,16 @@ ERROR_HTML = """
 <br>Click back to return and retry.</font> </b></form>
 """ 
 
-# Use this value to specify number of entries per transaction
-num_of_entries = 10
-
-# This value will be the number of seconds to delay transaction
-num_of_secs = 1
-
-# Get file path name of file "Stage4.html" in templates directory
-template_dir = os.path.join(os.path.dirname(__file__),'templates')
-jinja_env = jinja2.Environment(
-            loader = jinja2.FileSystemLoader(template_dir),
-            autoescape = True)
-template = jinja_env.get_template('Stage4.html')
-
 def guest_key(guest_name=GUEST_NAME):
     """Constructs a Datastore key for a guest entity.
+
     We use guest_name as the key.
     """
     return ndb.Key('guest', guest_name)
-
 # [START comment]
 # These are the objects that will represent our Author and our Post. We're using
 # Object Oriented Programming to create objects in order to put them in Google's
 # Database. These objects inherit Googles ndb.Model class.
-
 class Author(ndb.Model):
     """Sub model for representing an author."""
     identity = ndb.StringProperty(indexed=False)
@@ -52,15 +35,13 @@ class Comment(ndb.Model):
 
 # [END comment]
 class MainPage(webapp2.RequestHandler):
-
-# GET routine for querying datastore  
     def get(self):
-       #error = self.request.get('error','')
+       error = self.request.get('error','')
        guest_name = self.request.get('guest_name', GUEST_NAME)
        # Query commments and display by time
        comments_query = Comment.query(
                ancestor=guest_key(guest_name)).order(-Comment.date)
-       comments = comments_query.fetch(num_of_entries)
+       comments = comments_query.fetch(10)
         
        # If a person is logged in to Google's Services
        user = users.get_current_user()
@@ -80,8 +61,12 @@ class MainPage(webapp2.RequestHandler):
         'url': url,
         'url_linktext': url_linktext,
         }
-       
-       # Render the template values 
+       template_dir = os.path.join(os.path.dirname(__file__),'templates')
+       jinja_env = jinja2.Environment(
+            loader = jinja2.FileSystemLoader(template_dir),
+            autoescape = True)
+       template = jinja_env.get_template('notes.html')
+
        self.response.write(template.render(template_values))
  
     
@@ -95,24 +80,24 @@ class MainPage(webapp2.RequestHandler):
          
         if users.get_current_user():
             comment.author = Author(
-                identity=users.get_current_user().user_id(),
+               identity=users.get_current_user().user_id(),
                 email=users.get_current_user().email())
 
- # Get the content from our request parameters, 
- # "title" and "content".
+ # Get the description from our request parameters, 
+ # "title" and "description".
         comment.title = self.request.get('title')
-        comment.content = self.request.get('content')
+        comment.description = self.request.get('description')
         
-        if comment.title.strip() and comment.content.strip():  
-            # if title and content are valid 
+        if comment.title.strip() and comment.description.strip():  
+            # if title and description are valid 
             #  load data to Google Datastore
-            time.sleep(num_of_secs)
+            time.sleep(1)
             comment.put()
             query_params = {'guest_name': guest_name}
             self.redirect('/?' + urllib.urlencode(query_params))
         else:
-            # Error, title or content not valid.
-            time.sleep(num_of_secs)
+            # Error, title or description not valid.
+            time.sleep(.1)
             self.response.out.write(ERROR_HTML)
             # Do not put in Datastore.                 
 # [END main_page]
